@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <style>
+        @font-face {
+            font-family: Makisupa;
+            font-family: Hack;
+        }
+
+        h2 {
+            font-family: monospace;
+            background-color: red;
+            line-height: 40px;
+            font-size: 2em;
+            color: white;
+        }
+
+        p {
+            color: #BAD7F2;
+            font-family: Hack, monospace;
+            font-size: 1.1em;
+        }
+
+        /* Set all links to this color */
+        a {
+            color: #BDF7B7;
+            font-family: Hack, monospace;
+        }
+
+        body {
+            background-color: #A02C1F;
+            background-image: url("CowboyHellGround.png");
+            background-size: 50%;
+            margin: 0%; /* Remove default body margin */
+            padding: 0 10% 10% 10%;
+        }
+
+        table {
+            color: white;
+        }
+
+        figure figcaption{
+            text-align: left;
+            width: 15em;
+            padding-top: 5px;
+        }
+
+        .text-block {
+            background-color: #A02C1F;
+            padding: 10px;
+        }
+
+        .center-images {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+        }
+
+        #main-logo {
+            /*background-color : red;*/
+            width: 95%; /* Ensure it spans the full width of its container */
+            display: block; /* Ensure there’s no space below the image */
+            border: 6px ridge red;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 1%;
+        }
+
+        /*used for background rectangle*/
+        #container {
+            position: page;
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 10px;
+            justify-content: center;
+            background-color: rgba(255, 50, 50, 0.4); /* Example color with transparency */
+            z-index: -1; /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #BAD7F2;
+            font-family: Makisupa, monospace;
+            font-size: 1.15em;
+            border: 3px solid #BAD7F2;
+            padding: 2%;
+            background-color: #A02C1F;
+            text-align: center;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 15px;
+        }
+
+        #main-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #main-buttons img {
+            display: inline-block;
+            width: 40%;
+        }
+
+        #electronics_button {
+            margin-left: 100px;
+        }
+
+        #me-hair-standing {
+            width: 25%;
+            float: left;
+            margin: 13px;
+        }
+
+        #fish-pic {
+            margin: 5% 0% 5% 0%;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(34, 39, 110, 0.2);
+        }
+
+        #heqet-logo {
+            position: relative;
+            width: 20%;
+        }
+
+        #electronics-showoff {
+            display: block;
+            background-color: #A02C1F;
+            padding-bottom: 14%;
+        }
+
+        #pin-explosion {
+            float: left;
+            margin: 5% 2% 2% 2%;
+            vertical-align: middle;
+            width: 30%;
+        }
+
+        #voltage-adder {
+            float: right;
+            margin: 2%;
+            vertical-align: middle;
+            width: 30%;
+        }
+
+        #footer {
+            font-family: Makisupa, monospace;
+            clear: both;
+            text-align: center;
+            border: 3px dashed #4e160e;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #A02C1F;
+            padding: 20px;
+            font-size: 1.25em;
+        }
+
+    </style>
+</head>
+
+<link rel="icon" type="image/png" href="Favicon.png">
+<body>
+
+<div id="container">
+    <img id="main-logo" src="NortwareHeader.png" alt="NORTWARE" width=100%>
+    <!--<h2><span id="games-header">Games</span> <span id="and-header">and</span> <span id="electronics-header">Electronics!</span></h2>-->
+
+
+        <p id="header-text">
+            This website serves as a catalogue for my hardware and software ventures!<br>
+            <br>
+            Click one of the buttons below to check out some video games or electronics!
+        </p>
+
+
+    <div id="main-buttons">
+        <img id="games_button" src="GamesButton.png" alt="GAMES">
+        <img id="electronics_button" src="ElectronicsButton.png" alt="ELECTRONICS">
+    </div>
+
+    <div class="text-block">
+        <img id="me-hair-standing" src="MeHairStanding.jpg"
+             alt="Photo of me attached to Van-Degraff Generator">
+            <!--<figcaption>
+                Pic of me holding my Van de Graff, using a bean bag as insulation
+                from ground
+            </figcaption>
+        </figure>-->
+
+        <p>
+            Hi! I'm Leo Norton!<br>
+            <br>
+            I've been building <em>games</em> for a few years and publishing them on
+            <!--link to my itch page-->
+            <a target="_blank" href="https://nortware.itch.io/">my Itch.io</a><br>
+            (and that one game I published on <em>Steam</em>). <br><br>
+            Also, I've recently been working hard on some <em>electronics</em>
+            projects.<br> I wanted to learn web programming stuff, so I decided
+            to create a website to showcase some of my projects and their development! <br>
+            <br>
+            Thanks for checking out my page!
+        </p>
+
+    </div>
+
+
+    <!--
+    <br>
+    <a href="#games-section">Jump To Games</a>
+    <br>-->
+
+    <div class="center-images">
+    <img src="TeslaCoils.jpg" alt="Tesla Coil Builds" width=25%>
+    <img src="TeslaBulb.gif" alt="Tesla Coil Lighting a bulb" width="25%">
+    </div>
+    <p class="text-block">Heres a pic of some <strong>tesla coils</strong> I made and a video of me
+        playing with a plasma bulb I made using my large coil. Learn more
+        <a target="_blank" href="">here</a>
+        <br>
+    </p>
+
+    <div id="fish-pic">
+        <img src="FishGameBehemoth.gif" alt="Behemoth Gif" width=40%>
+        <img src="BobbitWorm.gif" alt="Bobbit worm launch" width=40%>
+        <p id=games-section><em>Scary Fish!!!!</em><br> These are some clips for the game
+        I'm currently working on: </p>
+        <img id="heqet-logo" src="Heqet.png" alt="HEQET" width=10%>
+    </div>
+
+    <div id="electronics-showoff">
+        <img id="pin-explosion" src="PinExplosion.gif" alt="PinExplosion">
+        <img id="voltage-adder" src="VoltageAdderVCO.jpg" alt="Voltage Adder VCO">
+    <p class="text-block">
+        <br>
+        Here are some assorted electronics projects! <br>
+        <br>
+        < This is my circular screen pin<br>
+        <br>
+        and my voltage adder VCO ><br>
+        <br>
+        Click on them to see more about them!
+    </p>
+    </div>
+
+</div>
+
+
+    <p id="footer">
+        Contact me at leoznorton@gmail.com
+    </p>
+
+
+</body>
+</html>
