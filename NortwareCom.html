@@ -3,86 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
     <style>
-        @font-face {
-            font-family: Makisupa;
-            font-family: Hack;
-        }
-
-        h2 {
-            font-family: monospace;
-            background-color: red;
-            line-height: 40px;
-            font-size: 2em;
-            color: white;
-        }
-
-        p {
-            color: #BAD7F2;
-            font-family: Hack, monospace;
-            font-size: 1.1em;
-        }
-
-        /* Set all links to this color */
-        a {
-            color: #BDF7B7;
-            font-family: Hack, monospace;
-        }
-
-        a:hover, a:active, a:focus {
-            background-color: rgba(189, 247, 183, 0.2);
-        }
-
-        body {
-            background-color: #A02C1F;
-            background-image: url("CowboyHellGround.png");
-            background-size: 50%;
-            margin: 0%; /* Remove default body margin */
-            padding: 0 10% 10% 10%;
-        }
-
-        table {
-            color: white;
-        }
-
-        figure figcaption {
-            text-align: left;
-            width: 15em;
-            padding-top: 5px;
-        }
-
-        .text-block {
-            background-color: #A02C1F;
-            padding: 10px;
-        }
-
-        .center-images {
-            display: block;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5%;
-        }
-
-        .top-bar {
-            position: fixed;
-            top: -3%;
-            left: auto;
-            right: auto;
-            margin-top: 0;
-            width: 80%;
-            height: 11%;
-            display: flex;
-            justify-content: space-around;
-            background-color: #A02C1F;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-            z-index: 9999;
-        }
-
-        .top-bar-text {
-            font-family: Makisupa, monospace;
-            font-size: 1.5em;
-        }
 
         #main-logo {
             /*background-color : red;*/
@@ -122,9 +44,7 @@
         }
 
         #main-buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
@@ -136,7 +56,12 @@
         }
 
         #electronics_button {
-            margin-left: 100px;
+            margin:10px;
+            vertical-align: center;
+        }
+
+        #games_button {
+            margin:10px;
         }
 
         #me-hair-standing {
@@ -192,26 +117,20 @@
     </style>
 </head>
 
-<link rel="icon" type="image/png" href="Favicon.png">
-
 <div class="top-bar">
-    <p class="top-bar-text">
-        HOME
-    </p>
-    <p class="top-bar-text">
-        GAMES
-    </p>
-    <p class="top-bar-text">
-        ELECTRONICS
-    </p>
-    <p class="top-bar-text">
-        MISC
-    </p>
+    <a class="top-bar-text" target="_blank" href="PageNotFound.html">HOME</a>
+    <a class="top-bar-text" target="_blank" href="PageNotFound.html">GAMES</a>
+    <a class="top-bar-text" target="_blank" href="PageNotFound.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_blank" href="PageNotFound.html">MISC</a>
+    <a class="top-bar-text" target="_blank" href="PageNotFound.html">ABOUT ME</a>
 </div>
 
 <body>
+
+<link rel="icon" type="image/png" href="Favicon.png">
+
 <div id="container">
-    <img id="main-logo" src="NortwareHeader.png" alt="NORTWARE" width=100%>
+    <img id="main-logo" src="NortwareHeader.png" alt="NORTWARE">
     <!--<h2><span id="games-header">Games</span> <span id="and-header">and</span> <span id="electronics-header">Electronics!</span></h2>-->
 
 
@@ -223,8 +142,12 @@
 
 
     <div id="main-buttons">
+        <a class="flexible-link" target="_blank" href="PageNotFound.html">
         <img id="games_button" src="GamesButton.png" alt="GAMES">
+        </a>
+        <a class="flexible-link" target="_blank" href="PageNotFound.html">
         <img id="electronics_button" src="ElectronicsButton.png" alt="ELECTRONICS">
+        </a>
     </div>
 
     <div class="text-block">
@@ -241,7 +164,7 @@
             <br>
             I've been building <em>games</em> for a few years and publishing them on
             <!--link to my itch page-->
-            <a target="_blank" href="https://nortware.itch.io/">my Itch.io</a><br>
+            <a class="text-link" target="_blank" href="https://nortware.itch.io/">my Itch.io</a><br>
             (and that one game I published on <em>Steam</em>). <br><br>
             Also, I've recently been working hard on some <em>electronics</em>
             projects.<br> I wanted to learn web programming stuff, so I decided
@@ -252,22 +175,25 @@
 
     </div>
 
-
-    <!--
     <br>
-    <a href="#games-section">Jump To Games</a>
-    <br>-->
+    <br>
 
     <div class="center-images">
-        <img src="TeslaCoils.jpg" alt="Tesla Coil Builds" width=25%>
-        <img src="TeslaBulb.gif" alt="Tesla Coil Lighting a bulb" width="25%">
+        <a class="flexible-link" target="_blank" href="PageNotFound.html">
+        <img src="TeslaCoils.jpg" alt="Tesla Coil Builds" width="25%">
+        <img src="TeslaBulb.gif" alt="Tesla Coil Lighting a bulb" width=25%>
+    </a>
     </div>
-    <p class="text-block">Heres a pic of some <strong>tesla coils</strong> I made and a video of me
-        playing with a plasma bulb I made using my large coil. Learn more
-        <a target="_blank" href="">here</a>
+    <p class="text-block">Heres a pic of some <strong>tesla coils</strong> I made and a
+        video of me playing with a plasma bulb I made using my large coil. Learn more
+        <a class="text-link" target="_blank" href="PageNotFound.html">here</a>
         <br>
     </p>
 
+    <br>
+    <br>
+
+    <a class="flexible-link" target="_blank" href="PageNotFound.html">
     <div id="fish-pic">
         <img src="FishGameBehemoth.gif" alt="Behemoth Gif" width=40%>
         <img src="BobbitWorm.gif" alt="Bobbit worm launch" width=40%>
@@ -275,10 +201,18 @@
             I'm currently working on: </p>
         <img id="heqet-logo" src="Heqet.png" alt="HEQET" width=10%>
     </div>
+    </a>
+
+    <br>
+    <br>
 
     <div id="electronics-showoff">
+        <a class="flexible-link" target="_blank" href="PageNotFound.html">
         <img id="pin-explosion" src="PinExplosion.gif" alt="PinExplosion">
+        </a>
+        <a class="flexible-link" target="_blank" href="PageNotFound.html">
         <img id="voltage-adder" src="VoltageAdderVCO.jpg" alt="Voltage Adder VCO">
+        </a>
         <p class="text-block">
             <br>
             Here are some assorted electronics projects! <br>
@@ -295,7 +229,8 @@
 
 
 <p id="footer">
-    Contact me at leoznorton@gmail.com
+    Contact me at
+<a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
 </p>
 
 

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Makisupa;
+    font-family: Hack;
+}
+
+h2 {
+    font-family: monospace;
+    background-color: red;
+    line-height: 40px;
+    font-size: 2em;
+    color: white;
+}
+
+p {
+    color: #BAD7F2;
+    font-family: Hack, monospace;
+    font-size: 1.1em;
+}
+
+/* Set all links to this color */
+a {
+    color: #BDF7B7;
+    font-family: Hack, monospace;
+}
+
+a.top-bar-text {
+    color: #e08e45;
+    text-decoration: none;
+}
+
+a.top-bar-text:hover {
+    background-color: rgba(189, 247, 183, 0.2);
+}
+
+.text-link:hover {
+    background-color: rgba(189, 247, 183, 0.2);
+}
+
+a:hover, a:active, a:focus {
+    /*background-color: rgba(189, 247, 183, 0.2);*/
+}
+
+#electronics_button:hover, #electronics_button:active, #electronics_button:focus {
+    width:45%;
+    background-color: transparent;
+}
+
+#games_button:hover, #games_button:active, #games_button:focus {
+    width:45%;
+    background-color: transparent;
+}
+
+body {
+    background-color: #A02C1F;
+    background-image: url("CowboyHellGround.png");
+    background-size: 50%;
+    margin: 0%; /* Remove default body margin */
+    padding: 0 10% 10% 10%;
+}
+
+table {
+    color: white;
+}
+
+figure figcaption {
+    text-align: left;
+    width: 15em;
+    padding-top: 5px;
+}
+
+.text-block {
+    background-color: #A02C1F;
+    padding: 10px;
+}
+
+.center-images {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.top-bar {
+    position: fixed;
+    left: auto;
+    right: auto;
+    margin-top: 0;
+    width: 80%;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #A02C1F;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+}
+
+.top-bar-text {
+    font-family: Makisupa, monospace;
+
+    font-size: 1.5em;
+    height: 77%;
+    margin: 0;
+    padding: 5px;
+}
+
+.flexible-link {
+    text-decoration: none;
+}
