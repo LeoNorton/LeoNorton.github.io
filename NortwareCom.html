@@ -29,6 +29,10 @@
             font-family: Hack, monospace;
         }
 
+        a:hover, a:active, a:focus {
+            background-color: rgba(189, 247, 183, 0.2);
+        }
+
         body {
             background-color: #A02C1F;
             background-image: url("CowboyHellGround.png");
@@ -41,7 +45,7 @@
             color: white;
         }
 
-        figure figcaption{
+        figure figcaption {
             text-align: left;
             width: 15em;
             padding-top: 5px;
@@ -60,6 +64,26 @@
             margin-top: 5%;
         }
 
+        .top-bar {
+            position: fixed;
+            top: -3%;
+            left: auto;
+            right: auto;
+            margin-top: 0;
+            width: 80%;
+            height: 11%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #A02C1F;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: 9999;
+        }
+
+        .top-bar-text {
+            font-family: Makisupa, monospace;
+            font-size: 1.5em;
+        }
+
         #main-logo {
             /*background-color : red;*/
             width: 95%; /* Ensure it spans the full width of its container */
@@ -68,19 +92,19 @@
             justify-content: center;
             margin-right: auto;
             margin-left: auto;
-            margin-top: 1%;
+            margin-top: 5%;
         }
 
         /*used for background rectangle*/
         #container {
-            position: page;
             top: 0;
             right: 8%;
             left: 8%;
             bottom: 0;
-            padding: 10px;
+            padding: 20px;
             justify-content: center;
             background-color: rgba(255, 50, 50, 0.4); /* Example color with transparency */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
             z-index: -1; /* Ensure it is behind other content */
         }
 
@@ -169,18 +193,33 @@
 </head>
 
 <link rel="icon" type="image/png" href="Favicon.png">
-<body>
 
+<div class="top-bar">
+    <p class="top-bar-text">
+        HOME
+    </p>
+    <p class="top-bar-text">
+        GAMES
+    </p>
+    <p class="top-bar-text">
+        ELECTRONICS
+    </p>
+    <p class="top-bar-text">
+        MISC
+    </p>
+</div>
+
+<body>
 <div id="container">
     <img id="main-logo" src="NortwareHeader.png" alt="NORTWARE" width=100%>
     <!--<h2><span id="games-header">Games</span> <span id="and-header">and</span> <span id="electronics-header">Electronics!</span></h2>-->
 
 
-        <p id="header-text">
-            This website serves as a catalogue for my hardware and software ventures!<br>
-            <br>
-            Click one of the buttons below to check out some video games or electronics!
-        </p>
+    <p id="header-text">
+        This website serves as a catalogue for my hardware and software ventures!<br>
+        <br>
+        Click one of the buttons below to check out some video games or electronics!
+    </p>
 
 
     <div id="main-buttons">
@@ -191,11 +230,11 @@
     <div class="text-block">
         <img id="me-hair-standing" src="MeHairStanding.jpg"
              alt="Photo of me attached to Van-Degraff Generator">
-            <!--<figcaption>
-                Pic of me holding my Van de Graff, using a bean bag as insulation
-                from ground
-            </figcaption>
-        </figure>-->
+        <!--<figcaption>
+            Pic of me holding my Van de Graff, using a bean bag as insulation
+            from ground
+        </figcaption>
+    </figure>-->
 
         <p>
             Hi! I'm Leo Norton!<br>
@@ -220,8 +259,8 @@
     <br>-->
 
     <div class="center-images">
-    <img src="TeslaCoils.jpg" alt="Tesla Coil Builds" width=25%>
-    <img src="TeslaBulb.gif" alt="Tesla Coil Lighting a bulb" width="25%">
+        <img src="TeslaCoils.jpg" alt="Tesla Coil Builds" width=25%>
+        <img src="TeslaBulb.gif" alt="Tesla Coil Lighting a bulb" width="25%">
     </div>
     <p class="text-block">Heres a pic of some <strong>tesla coils</strong> I made and a video of me
         playing with a plasma bulb I made using my large coil. Learn more
@@ -233,31 +272,31 @@
         <img src="FishGameBehemoth.gif" alt="Behemoth Gif" width=40%>
         <img src="BobbitWorm.gif" alt="Bobbit worm launch" width=40%>
         <p id=games-section><em>Scary Fish!!!!</em><br> These are some clips for the game
-        I'm currently working on: </p>
+            I'm currently working on: </p>
         <img id="heqet-logo" src="Heqet.png" alt="HEQET" width=10%>
     </div>
 
     <div id="electronics-showoff">
         <img id="pin-explosion" src="PinExplosion.gif" alt="PinExplosion">
         <img id="voltage-adder" src="VoltageAdderVCO.jpg" alt="Voltage Adder VCO">
-    <p class="text-block">
-        <br>
-        Here are some assorted electronics projects! <br>
-        <br>
-        < This is my circular screen pin<br>
-        <br>
-        and my voltage adder VCO ><br>
-        <br>
-        Click on them to see more about them!
-    </p>
+        <p class="text-block">
+            <br>
+            Here are some assorted electronics projects! <br>
+            <br>
+            < This is my circular screen pin<br>
+            <br>
+            and my voltage adder VCO ><br>
+            <br>
+            Click on them to see more about them!
+        </p>
     </div>
 
 </div>
 
 
-    <p id="footer">
-        Contact me at leoznorton@gmail.com
-    </p>
+<p id="footer">
+    Contact me at leoznorton@gmail.com
+</p>
 
 
 </body>
