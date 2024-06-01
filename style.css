@@ -53,7 +53,7 @@ a:hover, a:active, a:focus {
 
 body {
     background-color: #A02C1F;
-    background-image: url("CowboyHellGround.png");
+    background-image: url("Images/Games/CowboyHellGround.png");
     background-size: 50%;
     margin: 0%; /* Remove default body margin */
     padding: 0 10% 10% 10%;
