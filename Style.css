@@ -1,6 +1,7 @@
 @font-face {
     font-family: Makisupa;
     font-family: Hack;
+    font-family: "The Bold Font";
 }
 
 h2 {
@@ -106,4 +107,16 @@ figure figcaption {
 
 .flexible-link {
     text-decoration: none;
+}
+
+.footer {
+    font-family: Makisupa, monospace;
+    clear: both;
+    text-align: center;
+    border: 3px dashed #4e160e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #A02C1F;
+    padding: 20px;
+    font-size: 1.25em;
 }
