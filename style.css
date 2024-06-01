@@ -76,6 +76,7 @@ figure figcaption {
 
 .center-images {
     display: block-inline;
+    vertical-align: top;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
