@@ -110,6 +110,61 @@ figure figcaption {
     text-decoration: none;
 }
 
+.banners {
+    margin-bottom: 20px;
+}
+
+/* GRID SYSTEM------------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap between items */
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    text-decoration: none;
+}
+
+.grid-item img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1; /* Ensures the image is a square */
+    object-fit: cover; /* Ensures the image covers the entire area of the square */
+}
+
+.grid-item > .overlay {
+    position: absolute;
+}
+
+.green-grid img {
+    border: 5px solid #2c4229;
+}
+
+.green-grid p {
+    color: #141e13;
+}
+
+.red-grid img {
+    border: 5px solid #4e160e;
+    aspect-ratio: 4 / 3; /* Ensures the image is a square */
+}
+
+.red-grid p {
+    color: #bad7f2
+}
+
+.grid-item p {
+    margin: 10px 0 30px 0;
+    font-size: 1.6em;
+    font-family: Makisupa, monospace;
+}
+
+/* END GRID SYSTEM- ------------*/
+
 .footer {
     font-family: Makisupa, monospace;
     clear: both;
