@@ -18,6 +18,10 @@ p {
     font-size: 1.1em;
 }
 
+.green-text p {
+    color: #141e13;
+}
+
 figcaption {
     color: #BAD7F2;
     font-family: Hack, monospace;
@@ -77,6 +81,12 @@ figure figcaption {
 
 .text-block {
     background-color: #A02C1F;
+    padding: 10px;
+    margin:20px;
+}
+
+.green-text-block {
+    background-color: #7da878;
     padding: 10px;
     margin:20px;
 }
