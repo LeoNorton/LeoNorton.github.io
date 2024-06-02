@@ -28,7 +28,12 @@
             text-align: center;
             margin-right: 10%;
             margin-left: 10%;
-            margin-top: 15px;
+            margin-top: 45px;
+        }
+
+        #tesla-vid {
+            float: left;
+            padding-right: 10px;
         }
 
     </style>
@@ -49,41 +54,24 @@
 <div id="container">
 
     <p id="header-text">
-        This website serves as a catalogue for my hardware and software ventures!<br>
-        <br>
-        Click one of the buttons below to check out some video games or electronics!
+        Tesla Coils!
     </p>
 
-
-    <div id="main-buttons">
-        <a class="flexible-link" target="_self" href="GamesPage.html">
-        <img id="games_button" src="Images/Games/GamesButton.png" alt="GAMES">
-        </a><a class="flexible-link" target="_self" href="ElectronicsPage.html">
-        <img id="electronics_button" src="Images/Electronics/ElectronicsButton.png" alt="ELECTRONICS">
-        </a>
-    </div>
-
     <div class="text-block">
-        <img id="me-hair-standing" src="Images/Electronics/MeHairStanding.jpg"
-             alt="Photo of me attached to Van-Degraff Generator">
-        <!--<figcaption>
-            Pic of me holding my Van de Graff, using a bean bag as insulation
-            from ground
-        </figcaption>
-    </figure>-->
+        <video id=tesla-vid controls="controls" width="500" name="Me playing with small tesla coil">
+            <source src="Images/Electronics/SmallTeslaLed.MOV">
+        </video>
 
-        <p>
-            Hi! I'm Leo Norton!<br>
+        <p id="floating-description">
+            I've built a few <strong>tesla coils</strong> now and love that wireless power transmission and corona discharge!<br>
             <br>
-            I've been building <em>games</em> for a few years and publishing them on
-            <!--link to my itch page-->
-            <a class="text-link" target="_self" href="https://nortware.itch.io/">my Itch.io</a><br>
-            (and that one game I published on <em>Steam</em>). <br><br>
-            Also, I've recently been working hard on some <em>electronics</em>
-            projects.<br> I wanted to learn web programming stuff, so I decided
-            to create a website to showcase some of my projects and their development! <br>
+            This is a video of the small coil I built in <em>Northern Ireland</em>. You can see it easily light an LED
+            from a distance! I'm zooming in while filming so my phone doesn't get too close, the tesla usually
+            stops the video or randomly touches the screen lol<br>
             <br>
-            Thanks for checking out my page!
+            I'm running this off a super simple <strong>"Slayer Exciter"</strong> circuit with off
+            24 volts input. I'm estimating that
+            it's outputting around <strong></strong> 40 kilovolts.
         </p>
 
     </div>
