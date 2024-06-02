@@ -18,6 +18,12 @@ p {
     font-size: 1.1em;
 }
 
+figcaption {
+    color: #BAD7F2;
+    font-family: Hack, monospace;
+    font-size: 0.8em;
+}
+
 /* Set all links to this color */
 a {
     color: #BDF7B7;
@@ -72,6 +78,7 @@ figure figcaption {
 .text-block {
     background-color: #A02C1F;
     padding: 10px;
+    margin:20px;
 }
 
 .center-images {
