@@ -180,6 +180,11 @@ figure figcaption {
     font-family: Makisupa, monospace;
 }
 
+.assorted-showoff {
+    display: flex;
+    width: 100%;
+}
+
 /* END GRID SYSTEM- ------------*/
 
 .footer {
