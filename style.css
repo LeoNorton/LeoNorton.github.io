@@ -83,12 +83,26 @@ figure figcaption {
     background-color: #A02C1F;
     padding: 10px;
     margin:20px;
+    overflow: auto;
+}
+
+.text-block::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .green-text-block {
     background-color: #7da878;
     padding: 10px;
     margin:20px;
+    overflow: auto;
+}
+
+.green-text-block::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .center-images {
