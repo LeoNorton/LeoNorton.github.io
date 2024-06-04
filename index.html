@@ -53,15 +53,15 @@
         #main-buttons img {
             display: block-inline;
             vertical-align: top;
-            width: 40%;
+            width: 80%;
         }
 
         #electronics_button {
-            margin:10px;
+            margin: 10px;
         }
 
         #games_button {
-            margin:10px;
+            margin: 10px;
         }
 
         #me-hair-standing {
@@ -71,15 +71,11 @@
         }
 
         #fish-pic {
-            display: flex;
+            display: block;
             margin: 5% 0% 5% 0%;
             text-align: center;
             padding: 20px;
             background-color: rgba(34, 39, 110, 0.2);
-        }
-        #fish-pic img {
-            overflow: hidden;
-            white-space: nowrap;
         }
 
         #heqet-logo {
@@ -134,11 +130,14 @@
 
 
     <div id="main-buttons">
-        <a class="flexible-link" target="_self" href="GamesPage.html">
-        <img id="games_button" src="Images/Games/GamesButton.png" alt="GAMES">
-        </a><a class="flexible-link" target="_self" href="ElectronicsPage.html">
-        <img id="electronics_button" src="Images/Electronics/ElectronicsButton.png" alt="ELECTRONICS">
+        <div class="assorted-showoff" style="justify-content: center">
+            <a class="flexible-link" target="_self" href="GamesPage.html">
+                <img id="games_button" src="Images/Games/GamesButton.png" alt="GAMES">
+            </a><a class="flexible-link" target="_self" href="ElectronicsPage.html">
+            <img id="electronics_button" src="Images/Electronics/ElectronicsButton.png" alt="ELECTRONICS">
+
         </a>
+        </div>
     </div>
 
     <div class="text-block">
@@ -170,13 +169,15 @@
     <br>
 
     <div class="center-images">
-        <a class="flexible-link" target="_self" href="TeslaCoils.html">
-        <img style="padding-right: 50px" src="Images/Electronics/TeslaCoils.jpg"
-             alt="Tesla Coil Builds" width="25%"><img src="Images/Electronics/TeslaBulb.gif"
-                                                      alt="Tesla Coil Lighting a bulb" width=25%>
-    </a>
+        <div class="assorted-showoff" style="justify-content: center">
+            <a class="flexible-link" target="_self" href="TeslaCoils.html">
+                <img style="padding-right: 50px" src="Images/Electronics/TeslaCoils.jpg"
+                     alt="Tesla Coil Builds" width="25%"><img src="Images/Electronics/TeslaBulb.gif"
+                                                              alt="Tesla Coil Lighting a bulb" width=25%>
+            </a>
+        </div>
     </div>
-    <p class="text-block">Heres a pic of some <strong>tesla coils</strong> I made and a
+    <p class="text-block">Here's a pic of some <strong>tesla coils</strong> I made and a
         video of me playing with a plasma bulb I made using my large coil. Learn more
         <a class="text-link" target="_self" href="TeslaCoils.html">here</a>
         <br>
@@ -186,27 +187,28 @@
     <br>
 
     <a class="flexible-link" target="_self" href="Heqet.html">
-    <div id="fish-pic">
-        <div class="assorted-showoff">
-        <img style="padding-right: 50px" src="Images/Games/FishGameBehemoth.gif" alt="Behemoth Gif"
-             width=40%><img src="Images/Games/BobbitWorm.gif" alt="Bobbit worm launch" width=40%>
-        </div>
+        <div id="fish-pic">
+            <div class="assorted-showoff" style="justify-content: center">
+                <img style="padding-right: 50px" src="Images/Games/FishGameBehemoth.gif" alt="Behemoth Gif"
+                     width=40%><img src="Images/Games/BobbitWorm.gif" alt="Bobbit worm launch" width=40%>
+            </div>
 
-        <p id=games-section><em>Scary Fish!!!!</em><br> These are some clips for the game
-            I'm currently working on: </p>
-        <img id="heqet-logo" src="Images/Games/Heqet.png" alt="HEQET" width=10%>
+            <p id=games-section><em>Scary Fish!!!!</em><br> These are some clips for the game
+                I'm currently working on: </p>
+            <img id="heqet-logo" src="Images/Games/Heqet.png" alt="HEQET" width=10%>
+
+        </div>
     </a>
-</div>
 
     <br>
     <br>
 
     <div id="electronics-showoff" class="text-block">
         <a class="flexible-link" target="_self" href="PageNotFound.html">
-        <img id="pin-explosion" src="Images/Electronics/PinExplosion.gif" alt="PinExplosion">
+            <img id="pin-explosion" src="Images/Electronics/PinExplosion.gif" alt="PinExplosion">
         </a>
         <a class="flexible-link" target="_self" href="PageNotFound.html">
-        <img id="voltage-adder" src="Images/Electronics/VoltageAdderVCO.jpg" alt="Voltage Adder VCO">
+            <img id="voltage-adder" src="Images/Electronics/VoltageAdderVCO.jpg" alt="Voltage Adder VCO">
         </a>
         <p class="text-block">
             <br>
@@ -225,7 +227,7 @@
 
 <p class="footer">
     Contact me at
-<a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
 </p>
 
 

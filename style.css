@@ -52,12 +52,12 @@ a:hover, a:active, a:focus {
 }
 
 #electronics_button:hover, #electronics_button:active, #electronics_button:focus {
-    width:45%;
+    width:85%;
     background-color: transparent;
 }
 
 #games_button:hover, #games_button:active, #games_button:focus {
-    width:45%;
+    width:85%;
     background-color: transparent;
 }
 
