@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        .float-left {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .float-right {
+            float: right;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <div class="green-text" id="container">
+
+        <p id="header-text">
+            Electronics for quantum transduction and entanglement!
+        </p>
+
+        <div class="green-text-block">
+            <img class="float-left" src="Images/Electronics/NIST/VoltageAdderVCO.jpg" alt="Voltage Adder debugging"
+                width=30%>
+            <img class="float-right" src="Images/Electronics/NIST/MeAtNist.jpg" alt="Me at NIST" width=30%>
+
+            <p>
+                This page showcases some electronics I made while working for the National Institute of Standards
+                and Technology during 2022(entanglement) and 2023(transduction). I focused largely on optics during
+                these periods but also made some neat devices!<br>
+                <br>
+                On the picure on the right I'm wearing a pair of <em>512nm reflective and 1024nm absorbtive (those
+                    are light wavelengths)</em> glasses which cost $2000! Worth it to prevent being blinded by a
+                laser!
+            </p>
+
+        </div>
+
+        <div class="assorted-showoff" style="justify-content: center; text-align: center">
+            <img style="padding-right: 20px;" src="Images/Electronics/NIST/PCB.jpg" alt="Pockels Cell PCB" width=30%>
+            <img src="Images/Electronics/NIST/PockelsDriver.jpg" alt="Pockels Cell enclosure" width=30%>
+        </div>
+
+        <p class="green-text-block">In 2022, I worked on NIST's Bell Test. An experiment to test quantum entanglement
+            principals. We were using it to generate super duper perfect random numbers. Our setup quantum entangled
+            individual photons based on their polarity and sent them to opposite sides of the lab to be measured for
+            quantum phenomena.<br>
+            <br>
+            This little circuit I made controls the remotely controls the driver for the high speed polarization switch
+            component called a Pockels Cell. My device allows a user to output a high-resolution analog voltage (among
+            other functions) to control the angle of photon polarization. Remote operation is achieved with a custom
+            webserver and an ESP, meaning that the experiment can be operated completely remotely with my little box!
+            <br> (Yes the sides of the box are made of custom PCBs)
+        </p>
+
+        <figure class="float-left">
+            <img src="Images/Electronics/NIST/MeAtNist2.jpg" alt="Me at NIST" width=70%>
+            <figcaption style="width: 70%">
+                <p>
+                    Me at the Bell Test entanglement generator / photon transmitter.
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure class="float-right">
+            <img src="Images/Electronics/NIST/MicrowaveCircuit.jpg" alt="Microwave Circuit" width=60%>
+            <figcaption style="width: 60%">
+                <p>
+                    A small circuit I whipped up which uses two op-amps, some IQ mixers, and some filters and
+                    attenuators to properly mix high frequency signals to control a microwave laser circuit.
+                    (complicated signal stuff)
+                </p>
+            </figcaption>
+        </figure>
+
+        <div class="assorted-showoff">
+            <figure>
+                <video controls="controls" width="120%" name="Implemented projects">
+                    <source src="Images/Electronics/NIST/ImplementedProjects.mp4">
+                </video>
+                <figcaption style="width: 120%">
+                    <p>Here's a short video of my electronics as implemented in the experimental setup. <br>
+                        <br>
+                        That noise in the background is our <em>pulse tube</em> refrigerator keeping the experiment at
+                        ~6 degrees
+                        kelvin!
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/VoltageAdderVCO.jpg" alt="Voltage Adder VCO" width=80%>
+                <figcaption style="width: 80%">
+                    <p>I made this device to add two voltages, one with ~17db gain and generate a signal based off the
+                        sum. This signal varies in frequency based off the voltage, outputting an ~500MHz sine wave.
+                        This signal was used to drive an acousto-optic modulator, which lets you change a laser's
+                        wavelength.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="green-text-block">
+            <figure style="text-align: center;">
+                <video autoplay loop muted playsinline width="70%">
+                    <source src="Images/Electronics/NIST/LaserPatterns.mp4" type="video/mp4" />
+                </video>
+                <figcaption style="width: 90%; color:#2c4229">
+                    Some cool interference patterns created by scanning over some laser frequencies, coupling and
+                    uncoupling it from an optical cavity (two mirrors that the light bounces back and forth
+                    between).<br>
+                    <br>
+                    This pattern is from a camera and is actually what the "tip" of the laser beam looks like!
+                </figcaption>
+            </figure>
+            <p>
+                In 2023, I worked on a project focused on <em> quantum transduction and optical networking of
+                    superconducting
+                    quantum computers.</em> Basically, quantum computers need to work at like, millikelvin temperatures,
+                so
+                they're all in sealed refrigerators and can't send signals to other quantum computers. Our project would
+                transduce the microwave signal in the quantum computer to an optical signal, which could leave the
+                fridge and be sent to another quantum computer! Communication!
+            </p>
+        </div>
+
+
+    </div>
+
+    <p class="footer">
+        Contact me at
+        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    </p>
+
+
+</body>
+
+</html>
