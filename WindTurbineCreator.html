@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        .float-left {
+            float: left;
+            padding-right: 10px;
+        }
+
+        #tesla-builds-pic {
+            float: right;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <div class="green-text" id="container">
+
+        <p id="header-text">
+            A tiny wearable screen!
+        </p>
+
+        <div class="green-text-block">
+            <video class="float-left" autoplay loop muted playsinline width="30%">
+                <source src="Images/Electronics/TFTPin/GAFOM.mp4" type="video/mp4" />
+            </video>
+            <p>
+                I've been prepping for Burning Man 2024 and thought that a high-tech looking, wearable screen
+                would be cool! I decided to use a 1.28" diameter circular TFT screen powered by a Raspberry Pi zero.<br>
+                <br>
+                I decided to build this system as small as I reasonably could. I am driving this screen off an extremely
+                small microcontroller, the RP2040-Zero. I chose this controller over something like an Arduino Nano
+                because
+                it runs on 3v and has 2MB flash memory! A Nano barely has enough to store a graphics library.<br>
+                <br>
+                < This is a comical program I made using a dial graphic. It's kind of a reference to something in <em>
+                    NEU Wireless Club</em>. This graphic doesn't utilize the capabilities of the screen very well.
+            </p>
+
+        </div>
+
+        <div class="assorted-showoff">
+            <figure>
+                <video autoplay loop muted playsinline width="100%">
+                    <source src="Images/Electronics/TFTPin/PrototypePatterns.mp4" type="video/mp4" />
+                </video>
+                <figcaption style="width: 100%">
+                    <p>
+                        Heres some cool graphics test patterns on the pin. (This is before I finished the final
+                        enclosure)
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <video autoplay loop muted playsinline width="100%">
+                    <source src="Images/Electronics/TFTPin/Prototype.mp4" type="video/mp4" />
+                </video>
+                <figcaption style="width: 100%">
+                    <p>
+                        Heres a super early prototype of the project using the square screen and some really bulky
+                        hardware reminiscent of <a class="text-link" target="_blank" href="MothersDay.html">this
+                            project</a>. It's a pretty cool faux 3D program.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="green-text-block">
+            <img src="Images/Electronics/PinExplosion.gif" alt="Pin explosion" width=100%>
+
+            <p>
+                I designed the enclosure for this in SolidWorks and 3D printed it. I placed the microcontroller right
+                behind the screen, lining up the pins one to one! I placed a small 3.7v LiPo battery on the pin backing
+                to power the microcontroller. Its regulated 3.3v output powers the screen.<br>
+                <br>
+                The pin is held on by a couple strong magnets and a metal strip. I route electricity though the clothing
+                material by poking a positive and negative pin through the material into a cable assembly on the other
+                side.
+            </p>
+        </div>
+
+        <div class="assorted-showoff">
+
+            <figure>
+                <video autoplay loop muted playsinline width="60%">
+                    <source src="Images/Electronics/TFTPin/SolderingShowcase.mp4" type="video/mp4" />
+                </video>
+                <figcaption style="width: 60%">
+                    <p>Here's a showoff of how I soldered the screen pins almost directly into the microcontroller haha.
+                    </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="Images/Electronics/TFTPin/Backing.png" alt="Pin back" width=110%>
+                <figcaption style="width: 110%">
+                    <p>Back of the screen, showing button access and magnetic strip.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+        <p>
+            <strong> Stay tuned for more cool pin patterns! I hope to program a lot more of them before the summer
+                ends!</strong>
+        </p>
+    </div>
+
+    <p class="footer">
+        Contact me at
+        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    </p>
+
+
+</body>
+
+</html>
