@@ -38,9 +38,9 @@
             padding-right: 10px;
         }
 
-        #tesla-builds-pic {
+        .float-right {
             float: right;
-            padding-left: 50px;
+            padding-left: 10px;
         }
     </style>
 </head>
@@ -60,92 +60,77 @@
     <div class="green-text" id="container">
 
         <p id="header-text">
-            A tiny wearable screen!
+            Modular Wind Tunnel Museum Exhibit
         </p>
 
         <div class="green-text-block">
+            <img class="float-left" src="Images/Electronics/WindTurbine/FrontPage.JPG" alt="Front Page" width=50%>
+            <p>
+                This page is dedicated to a school project I did last semester. The task was to create a museum exhibit
+                which taught elementary-aged kids sustainability topics. My creation was a "Build your own wind turbine"
+                exhibit, where the young student could build a wind turbine rotor from modular parts and test their
+                creation in a wind tunnel, monitoring its performance.
+            </p>
+
+        </div>
+
+        <div class="green-text-block">
+            <iframe class="float-right" width="560" height="315"
+                src="https://www.youtube.com/embed/qia11IEtebg?si=_SoNd4RSPdofCu-j" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                I started this class project in a team of four and two of them dropped engineering so didn't
+                really work on the project. I was able to teach my remaining team member a bit and get him doing
+                some stuff...<br>
+                <br>
+                I grinded really hard on this project, it is constructed out of wooden panels, uses a relay to
+                control a powerful fan to spin the turbine, and uses a custom blade-building system which I
+                designed and 3D printed. You can create both vertical and horizontal axis wind turbines.<br>
+                <br>
+                The
+                spinning speed is picked up by spinning a DC motor connected to the ADC of the Arduino through a
+                slightly clever voltage divider circuit. The Lego themed instructions to play the game are given
+                through a Unity game which interfaces with the Arduino through the serial port.
+            </p>
+
+        </div>
+
+        <div style="width: 70%;" class="green-text-block">
             <video class="float-left" autoplay loop muted playsinline width="30%">
-                <source src="Images/Electronics/TFTPin/GAFOM.mp4" type="video/mp4" />
+                <source src="Images/Electronics/WindTurbine/UserTest.mp4" type="video/mp4" />
             </video>
             <p>
-                I've been prepping for Burning Man 2024 and thought that a high-tech looking, wearable screen
-                would be cool! I decided to use a 1.28" diameter circular TFT screen powered by a Raspberry Pi zero.<br>
-                <br>
-                I decided to build this system as small as I reasonably could. I am driving this screen off an extremely
-                small microcontroller, the RP2040-Zero. I chose this controller over something like an Arduino Nano
-                because
-                it runs on 3v and has 2MB flash memory! A Nano barely has enough to store a graphics library.<br>
-                <br>
-                < This is a comical program I made using a dial graphic. It's kind of a reference to something in <em>
-                    NEU Wireless Club</em>. This graphic doesn't utilize the capabilities of the screen very well.
+                There was really good reception to this project! Our teacher remarked that it was one of the
+                most well done in the class and the elementary schoolers enjoyed it a lot. One of the judges also said
+                ours "could be a real museum exhibit"! If you care to read
+                more you're welcome to look at my ~100page <a class="text-link" target="_blank"
+                    href="Images/Electronics/WindTurbine/Norton,O'Neill,Philp_P2_Writeup.pdf">write up</a> lol.
+
             </p>
 
         </div>
 
         <div class="assorted-showoff">
             <figure>
-                <video autoplay loop muted playsinline width="100%">
-                    <source src="Images/Electronics/TFTPin/PrototypePatterns.mp4" type="video/mp4" />
-                </video>
+                <img src="Images/Electronics/WindTurbine/TeamPic.jpg" alt="Team pic" width=100%>
                 <figcaption style="width: 100%">
                     <p>
-                        Heres some cool graphics test patterns on the pin. (This is before I finished the final
-                        enclosure)
+                        A pic of the project at the expo.
                     </p>
                 </figcaption>
             </figure>
 
             <figure>
-                <video autoplay loop muted playsinline width="100%">
-                    <source src="Images/Electronics/TFTPin/Prototype.mp4" type="video/mp4" />
-                </video>
+                <img src="Images/Electronics/WindTurbine/Construction.jpg" alt="Construction" width=100%>
                 <figcaption style="width: 100%">
                     <p>
-                        Heres a super early prototype of the project using the square screen and some really bulky
-                        hardware reminiscent of <a class="text-link" target="_blank" href="MothersDay.html">this
-                            project</a>. It's a pretty cool faux 3D program.
+                        Here's a picture of early stages of the wooden box construction.
                     </p>
                 </figcaption>
             </figure>
         </div>
-
-        <div class="green-text-block">
-            <img src="Images/Electronics/PinExplosion.gif" alt="Pin explosion" width=100%>
-
-            <p>
-                I designed the enclosure for this in SolidWorks and 3D printed it. I placed the microcontroller right
-                behind the screen, lining up the pins one to one! I placed a small 3.7v LiPo battery on the pin backing
-                to power the microcontroller. Its regulated 3.3v output powers the screen.<br>
-                <br>
-                The pin is held on by a couple strong magnets and a metal strip. I route electricity though the clothing
-                material by poking a positive and negative pin through the material into a cable assembly on the other
-                side.
-            </p>
-        </div>
-
-        <div class="assorted-showoff">
-
-            <figure>
-                <video autoplay loop muted playsinline width="60%">
-                    <source src="Images/Electronics/TFTPin/SolderingShowcase.mp4" type="video/mp4" />
-                </video>
-                <figcaption style="width: 60%">
-                    <p>Here's a showoff of how I soldered the screen pins almost directly into the microcontroller haha.
-                    </p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="Images/Electronics/TFTPin/Backing.png" alt="Pin back" width=110%>
-                <figcaption style="width: 110%">
-                    <p>Back of the screen, showing button access and magnetic strip.
-                    </p>
-                </figcaption>
-            </figure>
-        </div>
-        <p>
-            <strong> Stay tuned for more cool pin patterns! I hope to program a lot more of them before the summer
-                ends!</strong>
-        </p>
     </div>
 
     <p class="footer">

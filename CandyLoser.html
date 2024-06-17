@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(255, 50, 50, 0.4);
+            /* Example color with transparency */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #BAD7F2;
+            font-family: Makisupa, monospace;
+            font-size: 1.15em;
+            border: 3px solid #BAD7F2;
+            padding: 2%;
+            background-color: #A02C1F;
+            text-align: center;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 45px;
+        }
+
+        .assorted-showoff {
+            display: flex;
+            width: 100%;
+        }
+
+        #main-banner {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+            display: block;
+            text-align: center;
+        }
+
+        #desert-scene {
+            float: left;
+            margin-right: 20px;
+        }
+
+        #itch-link {
+            position: absolute;
+            right: 80%;
+            top: 15%;
+            width: 10%;
+        }
+
+        #check-itch-text {
+            position: absolute;
+            color: rgb(222, 232, 240);
+            background-color: rgb(238, 97, 91);
+            padding: 10px;
+            right: 79%;
+            top: 40%;
+            width: 10%;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <div id="container">
+
+        <figure>
+            <a target="_blank" href="https://nortware.itch.io/candyloser">
+                <img id="itch-link" src="Images/ItchLogo.png" alt="Itch Link">
+            </a>
+            <p>
+            <figcaption id="check-itch-text">
+                Play it for free here!
+            </figcaption>
+            </p>
+        </figure>
+
+        <img id="main-banner" src="Images/Games/CowboyHellMainTitle.png" alt="Cowboy Hell Banner" width="50%">
+        <div class="text-block">
+            <img id="desert-scene" src="Images/Games/CowboyHell/DesertScene.JPG" alt="DesertScene" width="50%">
+            <p>
+                Candy Loser is a creepy, musical, halloween-themed adventure game which takes the player on a trip
+                through a neighborhood in pursuit of candy. This project was a submission for the one week Queen's
+                University Game Jam!<br>
+                <br>
+                The people, music, and textures in this project were created by <strong>Eli Silverstein</strong>! <br>
+                <br>
+                The buildings were modeled by <strong>Kaan Volkan</strong>!
+            </p>
+        </div>
+        <img style="float: right" src="Images/Games/CowboyHell/ThePit.png" alt="The Pit" width="50%">
+        <p>
+            In this game, you go from house to house and trick or treat. Each house has unique animations and music as a
+            story progresses. It's a pretty novel experience Candy Loser won second place in the jam and we won a like, $45 prize or something.
+        </p>
+
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Games/CowboyHell/HellBanjoist.JPG" alt="Hell Banjoist" width="93%">
+                <figcaption style="width: 100%">
+                    <p>The Hell Banjoist plays tunes, helping you find your way back to town!</p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Games/CowboyHell/HellRogue.JPG" alt="Hell Rogue" width="60%">
+                <figcaption style="width: 70%">
+                    <p>Hell Rogue is always where you'd least expect it! From the path of a giant
+                        crusher, to an opulent palace, to... ????</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div style="text-align: center">
+            <figure>
+                <img src="Images/Games/CowboyHell/HorseRace.png" alt="Horse Race" width="80%">
+                <figcaption style="margin: auto">
+                    <p>Horse race!</p>
+                </figcaption>
+            </figure>
+        </div>
+        <p>
+            Cowboy Hell started as a weird inside joke among me and my friends. I think
+            the original line that started the whole thing was <strong><span style="background-color: darkred">
+                    "Welcome to Cowboy Hell, where the cowboys are cowboys and the grass is... red"</span></strong>
+            I decided to make a game out of that lol. <br>
+            <br>
+            There are a lot of inside jokes in the game. All the voices for the various characters
+            are done by my friends. Some of the writing is done by them too. The amazing cover
+            art was done by my friend <strong>Cam Chen</strong>! I'll have to give a better shout out
+            to him somewhere on this website. He really did an amazing job.
+        </p>
+        <div style="text-align: center">
+            <img src="Images/Games/CowboyHell/TheFort.JPG" alt="The Fort" width="80%">
+        </div>
+
+        <p>
+            If you find Millie in the game, you're a top echelon Cowboy Hell player, not many
+            people have done that. If you find Kevin mode... O_O<br>
+            <br>
+            Hacker levels of good ;)
+        </p>
+
+    </div>
+
+    <p class="footer">
+        Contact me at
+        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    </p>
+
+
+</body>
+
+</html>
