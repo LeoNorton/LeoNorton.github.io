@@ -52,12 +52,36 @@
             -webkit-column-gap: 0px;
             -moz-column-count: 5;
             -moz-column-gap: 0px;
-            column-count:5;
+            column-count: 5;
             column-gap: 0px;
 
             display: inline-block;
             margin-right: auto;
             margin-left: auto;
+        }
+
+        @media screen and (max-width: 2000px) {
+            .images-wrapper {
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .images-wrapper {
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .images-wrapper {
+                -moz-column-count: 1;
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
         }
 
         div.gallery {
@@ -79,7 +103,7 @@
 
         div.desc {
             padding: 15px;
-            overflow:unset;
+            overflow: unset;
             text-align: center;
             font-family: Hack, monospace;
             color: #BAD7F2;
@@ -184,66 +208,66 @@
                     <img src="Images/Misc/WaterTank.jpg" alt="WaterTank">
                 </a>
                 <div class="desc">Me in the Northeastern WaterTank <3333 </div>
-            </div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/OuterWildsShip.jpg">
-                    <img src="Images/Misc/OuterWildsShip.jpg" alt="Outer Wilds Ship">
-                </a>
-                <div class="desc">A model of the Outer Wilds Ship that I printed and painted</div>
-            </div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/OuterWildsShip.jpg">
+                        <img src="Images/Misc/OuterWildsShip.jpg" alt="Outer Wilds Ship">
+                    </a>
+                    <div class="desc">A model of the Outer Wilds Ship that I printed and painted</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/EclipseThroughBreadboard1.jpg">
-                    <img src="Images/Misc/EclipseThroughBreadboard1.jpg" alt="Eclipse through breadboard">
-                </a>
-                <div class="desc">The solar eclipse as shown through a perfboard!</div>
-            </div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/EclipseThroughBreadboard1.jpg">
+                        <img src="Images/Misc/EclipseThroughBreadboard1.jpg" alt="Eclipse through breadboard">
+                    </a>
+                    <div class="desc">The solar eclipse as shown through a perfboard!</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/EclipseThroughBreadboard2.jpg">
-                    <img src="Images/Misc/EclipseThroughBreadboard2.jpg" alt="Eclipse through breadboard2">
-                </a>
-                <div class="desc">Heres the setup to make that eclipse photo</div>
-            </div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/EclipseThroughBreadboard2.jpg">
+                        <img src="Images/Misc/EclipseThroughBreadboard2.jpg" alt="Eclipse through breadboard2">
+                    </a>
+                    <div class="desc">Heres the setup to make that eclipse photo</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/ImpossibleOcean.jpeg">
-                    <img src="Images/Misc/ImpossibleOcean.jpeg" alt="Impossible Ocean">
-                </a>
-                <div class="desc">An art piece I photoshopped for a final art project in high school</div>
-            </div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/ImpossibleOcean.jpeg">
+                        <img src="Images/Misc/ImpossibleOcean.jpeg" alt="Impossible Ocean">
+                    </a>
+                    <div class="desc">An art piece I photoshopped for a final art project in high school</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/Instruments.jpg">
-                    <img src="Images/Misc/Instruments.jpg" alt="Instruments">
-                </a>
-                <div class="desc">One of my guitars, my didgeridoo and my banjo!</div>
-            </div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/Instruments.jpg">
+                        <img src="Images/Misc/Instruments.jpg" alt="Instruments">
+                    </a>
+                    <div class="desc">One of my guitars, my didgeridoo and my banjo!</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/ExplodingCap2.jpg">
-                    <img src="Images/Misc/ExplodingCap2.jpg" alt="Exploding cap sparks">
-                </a>
-                <div class="desc">I like to explode capacitors as a party trick, here's a huge shower of sparks from
-                    that</div>
-            </div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/ExplodingCap2.jpg">
+                        <img src="Images/Misc/ExplodingCap2.jpg" alt="Exploding cap sparks">
+                    </a>
+                    <div class="desc">I like to explode capacitors as a party trick, here's a huge shower of sparks from
+                        that</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="Images/Misc/ExplodingCap1.jpg">
-                    <img src="Images/Misc/ExplodingCap1.jpg" alt="Exploding cap flash">
-                </a>
-                <div class="desc">Check out how the explosion lights up the whole room! The rolling shutter cuts off
-                    half the glow</div>
+                <div class="gallery">
+                    <a target="_blank" href="Images/Misc/ExplodingCap1.jpg">
+                        <img src="Images/Misc/ExplodingCap1.jpg" alt="Exploding cap flash">
+                    </a>
+                    <div class="desc">Check out how the explosion lights up the whole room! The rolling shutter cuts off
+                        half the glow</div>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <p class="footer">
-        Contact me at
-        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
-    </p>
+        <p class="footer">
+            Contact me at
+            <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+        </p>
 
 
 </body>
