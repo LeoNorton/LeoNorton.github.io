@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #main-logo {
+            /*background-color : red;*/
+            width: 95%;
+            /* Ensure it spans the full width of its container */
+            display: block;
+            /* Ensure there’s no space below the image */
+            border: 6px ridge red;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5%;
+        }
+
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(255, 50, 50, 0.4);
+            /* Example color with transparency */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #BAD7F2;
+            font-family: Makisupa, monospace;
+            font-size: 1.15em;
+            border: 3px solid #BAD7F2;
+            padding: 2%;
+            background-color: #A02C1F;
+            text-align: center;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 45px;
+        }
+
+        .images-wrapper {
+            -webkit-column-count: 5;
+            -webkit-column-gap: 0px;
+            -moz-column-count: 5;
+            -moz-column-gap: 0px;
+            column-count:5;
+            column-gap: 0px;
+
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ff0000;
+            background-color: #9b2525;
+            float: left;
+            width: 250px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #ffcaca;
+        }
+
+        div.gallery img {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        div.desc {
+            padding: 15px;
+            overflow:unset;
+            text-align: center;
+            font-family: Hack, monospace;
+            color: #BAD7F2;
+            -webkit-column-break-before: avoid;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <div id="container">
+
+        <p id="header-text">
+            Here's just a bunch of pictures that I think are cool for one reason or another! Click to view pic.
+        </p>
+
+        <div class="images-wrapper">
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/3Dprinter.jpg">
+                    <img src="Images/Misc/3Dprinter.jpg" alt="3D printer">
+                </a>
+                <div class="desc">My personal 3D printer (an Ender 3)</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/BurningMagnesium.jpg">
+                    <img src="Images/Misc/BurningMagnesium.jpg" alt="burning magnesium">
+                </a>
+                <div class="desc">Burning magnesium at a party</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Electronics/CoffeeCooler.jpg">
+                    <img src="Images/Electronics/CoffeeCooler.jpg" alt="coffee cooler">
+                </a>
+                <div class="desc">Cooling my coffee with a rigged up power supply and fan</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Electronics/Doorbell.jpg">
+                    <img src="Images/Electronics/Doorbell.jpg" alt="doorbell">
+                </a>
+                <div class="desc">A scuffed boost-converter doorbell I added to <em>Wireless Club</em></div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/BurningManPatches.jpg">
+                    <img src="Images/Misc/BurningManPatches.jpg" alt="Burning man patches">
+                </a>
+                <div class="desc">Some custom patches I made for Burning Man picturing the Zander Lander</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/FemurRod.JPG">
+                    <img src="Images/Misc/FemurRod.JPG" alt="Femur rod">
+                </a>
+                <div class="desc">This titanium rod was installed in the center of my broken femur at one point</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/Earwig.jpg">
+                    <img src="Images/Misc/Earwig.jpg" alt="Earwig">
+                </a>
+                <div class="desc">An earwig halloween costume I made, its completely made out of EVA anti-fatigue mats
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/GasMask.jpg">
+                    <img src="Images/Misc/GasMask.jpg" alt="gas mask">
+                </a>
+                <div class="desc">Little EVA gas mask I made</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/PrayingMantis.jpg">
+                    <img src="Images/Misc/PrayingMantis.jpg" alt="Praying Mantis">
+                </a>
+                <div class="desc">A praying mantis head I made as part of a massive halloween costume </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/RobotHead.jpg">
+                    <img src="Images/Misc/RobotHead.jpg" alt="Robot head">
+                </a>
+                <div class="desc">A broken robot head helmet which was part of a full costume as well</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/WaterTank.jpg">
+                    <img src="Images/Misc/WaterTank.jpg" alt="WaterTank">
+                </a>
+                <div class="desc">Me in the Northeastern WaterTank <3333 </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/OuterWildsShip.jpg">
+                    <img src="Images/Misc/OuterWildsShip.jpg" alt="Outer Wilds Ship">
+                </a>
+                <div class="desc">A model of the Outer Wilds Ship that I printed and painted</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/EclipseThroughBreadboard1.jpg">
+                    <img src="Images/Misc/EclipseThroughBreadboard1.jpg" alt="Eclipse through breadboard">
+                </a>
+                <div class="desc">The solar eclipse as shown through a perfboard!</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/EclipseThroughBreadboard2.jpg">
+                    <img src="Images/Misc/EclipseThroughBreadboard2.jpg" alt="Eclipse through breadboard2">
+                </a>
+                <div class="desc">Heres the setup to make that eclipse photo</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/ImpossibleOcean.jpeg">
+                    <img src="Images/Misc/ImpossibleOcean.jpeg" alt="Impossible Ocean">
+                </a>
+                <div class="desc">An art piece I photoshopped for a final art project in high school</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/Instruments.jpg">
+                    <img src="Images/Misc/Instruments.jpg" alt="Instruments">
+                </a>
+                <div class="desc">One of my guitars, my didgeridoo and my banjo!</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/ExplodingCap2.jpg">
+                    <img src="Images/Misc/ExplodingCap2.jpg" alt="Exploding cap sparks">
+                </a>
+                <div class="desc">I like to explode capacitors as a party trick, here's a huge shower of sparks from
+                    that</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Images/Misc/ExplodingCap1.jpg">
+                    <img src="Images/Misc/ExplodingCap1.jpg" alt="Exploding cap flash">
+                </a>
+                <div class="desc">Check out how the explosion lights up the whole room! The rolling shutter cuts off
+                    half the glow</div>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="footer">
+        Contact me at
+        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    </p>
+
+
+</body>
+
+</html>
