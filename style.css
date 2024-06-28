@@ -204,6 +204,14 @@ figure figcaption {
     color: #141e13;
 }
 
+.red-square-grid img {
+    border: 5px solid #4e160e;
+}
+
+.red-square-grid p {
+    color: #bad7f2
+}
+
 .red-grid img {
     border: 5px solid #4e160e;
     aspect-ratio: 4 / 3; /* Ensures the image is a square */
