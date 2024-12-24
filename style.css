@@ -37,6 +37,13 @@ h2 {
     color: white;
 }
 
+h3 {
+    /*line-height: 40px;*/
+    color: #141e13;
+    font-family: Hack, monospace;
+    font-size: 1.1em;
+}
+
 p {
     color: #BAD7F2;
     font-family: Hack, monospace;
@@ -45,6 +52,13 @@ p {
 
 .green-text p {
     color: #141e13;
+}
+
+.date p{
+    position: absolute;
+    right: 10%;
+    top: 7%;
+    width: 10%;
 }
 
 figcaption {
@@ -233,6 +247,44 @@ figure figcaption {
 }
 
 /* END GRID SYSTEM- ------------*/
+
+/* Start sidebar system -------------*/
+.sidebar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 75px;
+    height: 100vh; /* Full height */
+    background-color: rgba(255, 50, 50, 0.4);
+    /* Example color with transparency */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    text-align: center;
+    /*color: #e08e45;*/
+    padding: 15px;
+}
+
+.sidebar h2 {
+    font-family: Makisupa, monospace;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #bad7f2;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+/* End sidebar system -------------*/
 
 .footer {
     font-family: Makisupa, monospace;

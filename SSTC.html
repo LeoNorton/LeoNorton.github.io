@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1; /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        #tesla-vid {
+            float: left;
+            padding-right: 10px;
+        }
+
+        #tesla-builds-pic {
+            float: right;
+            padding-left: 50px;
+        }
+
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+
+<div class="green-text" id="container">
+
+    <p id="header-text">
+        Driverless Solid State Tesla Coil!
+    </p>
+
+    <div class="date">
+        <p>Updated 12/24/2024</p>
+    </div>
+
+    <div class="green-text-block">
+        <video id=tesla-vid controls="controls" width="250" name="Me playing with small tesla coil">
+            <source src="Images/Electronics/SSTC/120Vtest.mp4">
+        </video>
+
+        <p>
+            I would regard this tesla coil as a proper<strong> Solid State Tesla Coil (SSTC)</strong>. It switches the primary
+            off a large power mosfet which again, uses feedback from a direct electrical connection to the base of
+            the secondary.<br>
+            <br>
+            This circuit runs right off of wall power at<strong> 120V input!</strong> The sparks coming out of this thing are
+            slightly lower frequency with a smaller coupling coefficient causing loooong sword streamers!
+            I've been getting ~6in streamers from this coil. I believe this circuit hits a<strong> few hundred kilovolts.</strong><br>
+            <br>
+            <strong><----- This</strong> is a video of one of my first tests: using the coil to light a bulb and playing with the
+            tips of the sword arcs. You can't actually feel yourself getting electrocuted due to the high frequency
+            of the voltage. A lot of people talk about the dangers of internal burns and nerve damage, the latter
+            of which, I'm not sure about, but I do tend to conduct the arc through a screwdriver to prevent burns.
+        </p>
+
+    </div>
+
+    <div class="assorted-showoff">
+        <figure>
+            <video autoplay loop muted playsinline width=70%>
+                <source src="Images/Electronics/SSTC/120V50%25test.MOV" type="video/mp4"/>
+            </video>
+            <figcaption style="width: 70%">
+                <p>
+                Here's a close up of the coil running at ~50% power.
+                   <strong>Huge arcs!</strong>
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <video controls="controls" width="275" name="Me playing with 36V tesla coil">
+                <source src="Images/Electronics/SSTC/36Vtest.MOV">
+            </video>
+            <figcaption style="width: 100%">
+                <p>In this video, I run the coil at 36V, or ~25% power. You can see me excite plasma
+                in a light bulb and conduct the arc through some tweezers.</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="green-text-block">
+        <div style="text-align: center">
+            <img src="Images/Electronics/SSTC/Circuit.jpg" alt="Tesla Coil circuit back" height=270>
+            <img src="Images/Electronics/SSTC/CircuitInput.jpg" alt="Tesla Coil circuit front" height=270>
+            <img src="Images/Electronics/SSTC/SSTCSchematic.JPG" alt="Circuit Schematic" height=270>
+        </div>
+
+        <p>
+            Here's the circuit driving the coil, it actually runs off an<em> IRFP460</em> mosfet, which is rated for 200V and
+            20A. I bias the input to the threshold voltage with a resistor network and try to drain off
+            spikes at the gate with a 12V TVS diode. Despite a direct electrical connection with the
+            large primary inductance and high secondary voltage, the major protection for this mosfet comes
+            from the<strong> 12V TVS diode</strong> from gate to source and the<strong> 200V TVS diode</strong> from drain to source. This circuit
+            is more robust than the simple slayer exciter, but still easily breaks from a voltage spike into ground
+            or overheating of the HV TVS diode. Note that the wiring schematic doesn't actually reflect my circuit, sorry.
+        </p>
+    </div>
+
+
+        <figure>
+            <video controls="controls" width="70%" name="Spark Gap Driver Test">
+                <source src="Images/Electronics/SSTC/120Vtest2.mov">
+            </video>
+            <figcaption style="width: 70%">
+                <p>Here's a full power test in wireless club. You'll notice that
+                the arc forms at the center of the secondary, not at the top load. This
+                is undesirable, I believe this is due to slow switching of the mosfet, which
+                should have a dedicated gate driver circuit.<strong> Still many more things to fix!</strong> </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <video autoplay loop muted playsinline width="70%">
+                <source src="Images/Electronics/SSTC/PlasmaJets.MOV" type="video/mp4"/>
+            </video>
+            <figcaption style="width: 70%">
+                <p>At very low power, exciting plasma in a light bulb looks like a tiny
+                jet of colored flame!</p>
+            </figcaption>
+        </figure>
+    <a class="text-link" target="_blank" href="SlayerExciters.html">Click here for some more cool coil
+    tricks!</a>
+    <div class="green-text-block">
+        <h3 style="text-align: center">
+            Stay tuned for yet nicer and cooler coils!<br>
+        </h3>
+        </div>
+</div>
+
+<p class="footer">
+    Contact me at
+    <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+</p>
+
+
+</body>
+</html>

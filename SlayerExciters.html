@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1; /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        #tesla-vid {
+            float: left;
+            padding-right: 10px;
+        }
+
+        #tesla-builds-pic {
+            float: right;
+            padding-left: 50px;
+        }
+
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+
+<div class="green-text" id="container">
+
+    <p id="header-text">
+        Slayer Exciter Tesla Coils!
+    </p>
+
+    <div class="date">
+        <p>Updated 12/23/2024</p>
+    </div>
+
+    <div class="green-text-block">
+        <video id=tesla-vid controls="controls" width="500" name="Me playing with small tesla coil">
+            <source src="Images/Electronics/SlayerExciter/SmallTeslaLed.mp4">
+        </video>
+
+        <p>
+            The "Slayer Exciter" tesla coil is just about the easiest tesla coil design you can make. I've built a few
+            of these small <strong>tesla coils</strong> now and love that wireless power transmission and corona
+            discharge with such a simple circuit!<br>
+
+            <br>
+            This is a video of the small coil I built in <em>Northern Ireland</em>. You can see it easily light an LED
+            from a distance! I'm zooming in while filming so my phone doesn't get too close, the tesla usually
+            stops the video or randomly touches the screen lol<br>
+            <br>
+            I'm running this off a super simple <strong>"Slayer Exciter"</strong> circuit with off
+            24 volts input. I'm estimating that
+            it's outputting around <strong></strong> 10 kilovolts based on the spark size.
+        </p>
+
+    </div>
+
+    <div class="assorted-showoff">
+        <figure>
+            <video autoplay loop muted playsinline width=100%>
+                <source src="Images/Electronics/SlayerExciter/LargeTesla.mp4" type="video/mp4"/>
+            </video>
+            <figcaption style="width: 100%">
+                <p>
+                The astable, circular "spinning" on this coil
+                is due to ionic wind pushing a wire around!
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="Images/Electronics/SlayerExciter/SlayerExciterCircuit.jpg" alt="Slayer Exciter Circuit" width=60%>
+            <figcaption style="width: 60%">
+                <p>This tiny, tiny slayer circuit powers that big coil right now. The name "Slayer Exciter"
+                might come from how many transistors it "slays" haha. In this circuit, I chained three npn transistors
+                in parallel to share power. This was a <em>really bad and dumb</em> thing to do. I try to match the hfe/gain
+                of these transistors manually, making replacements kind of hard, often I just run the coil with one.</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="green-text-block">
+        <img id="tesla-builds-pic" src="Images/Electronics/SlayerExciter/TeslaCoils.jpg" alt="Tesla Coil Builds" width="35%">
+
+        <p>
+            I've made a few coils of varying sizes. The largest one creates much better streamers with
+            the same voltage input as the others. It also makes a good amount of ionic wind!<br>
+            <br>
+            I wound the smaller coils completely by hand (crazy) and the big
+            one on an electric drill (so much easier!).<br>
+            <br>
+            I'm working on making my circuits a lot beefier now, such as a <strong>spark gap</strong>
+            driven circuit or mosfet-driven solid state coils!<br>
+            <br>
+            <a class="text-link" target="_blank" href="SSTC.html">Click here for some much
+            beefier tesla coils!</a>
+        </p>
+    </div>
+
+    <div class="assorted-showoff">
+        <figure>
+            <img src="Images/Electronics/SlayerExciter/TeslaBulb.gif" alt="Tesla Bulb" width=100%>
+            <figcaption style="width: 100%">
+                <p>If you connect a tungsten bulb it becomes a really beautiful plasma globe!</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <video autoplay loop muted playsinline width="60%">
+                <source src="Images/Electronics/SlayerExciter/LargeTeslaLEDBulb.mp4" type="video/mp4"/>
+            </video>
+            <figcaption style="width: 60%">
+                <p>This LED bulb has a vibrant blue glow!</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="assorted-showoff">
+        <figure>
+            <img src="Images/Electronics/SlayerExciter/CrazyImage.jpg" alt="Pic of me with lit bulbs in my mouth" width=100%>
+            <figcaption style="width: 100%">
+                <p>Here's a crazy picture</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="Images/Electronics/SlayerExciter/SlayerExciterSchematic.JPG" alt="Circuit schematic" width=70%>
+            <figcaption style="width: 70%">
+                <p>Here's the circuit I'm using to drive these small coils. You can see how incredibly
+                    simple this circuit is, driven by a single NPN transistor operating as a switch.
+                    <strong>I talk more about this dubious circuit below.</strong>
+                </p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="green-text-block">
+        <h3>Simulations!</h3>
+        <p>
+            I quickly simulated the "Slayer Exciter"  in LTSpice using measured values for coil inductance and calculated
+            values for coupling coefficient and secondary parasitic capacitance (C1). The secondary of the coil
+            is literally connected directly to the base of the transistor as a feedback mechanism. This design choice
+            causes the transistor to fail very quickly at any voltage over like 12.
+        </p>
+        <img src="Images/Electronics/SlayerExciter/SlayerExciterSim.JPG" alt="Tesla Coil Transient Sim" width="100%"><br>
+        <p>
+            Above is the transient analysis of the startup of the coil in LTSpice. You can see the oscillation
+            resonate until it hits a maximum voltage of 30kVPP. In reality, the voltage reached is about half this, there
+            are more losses in coupling and resonance isn't perfect. In the simulation, a surprisingly pure sine wave is
+            generated!
+        </p>
+        <img src="Images/Electronics/SlayerExciter/SlayerExciterFFT.JPG" alt="Tesla Coil FFT" width="100%">
+
+        <p>
+            Above is the Fast Fourier Transform of the output waveform. You can see a very pure sine signal
+            at ~230kHz. This matches fairly closely with my measured frequency of 310kHz. The simulation is
+            far from perfect but an alright representation of the real slayer.<br>
+            <br>
+
+            <a class="text-link" target="_blank" href="SSTC.html">Click here for some much
+                beefier tesla coils!</a>
+        </p>
+    </div>
+</div>
+
+
+
+<p class="footer">
+    Contact me at
+    <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+</p>
+
+
+</body>
+</html>
