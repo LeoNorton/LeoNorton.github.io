@@ -19,7 +19,7 @@
             z-index: -1; /* Ensure it is behind other content */
         }
 
-        #header-text {
+        .header-text {
             color: #141e13;
             font-family: Makisupa, monospace;
             font-size: 1.2em;
@@ -59,13 +59,60 @@
 
 <div class="green-text" id="container">
 
-    <p id="header-text">
-        Driverless Solid State Tesla Coil!
+    <p class="header-text">
+        Sneak-Peak at My New Quasi-Continuous-Waveform Coil!
     </p>
 
     <div class="date">
-        <p>Updated 12/24/2024</p>
+        <p>Updated 1/30/2025</p>
     </div>
+
+    <div class="green-text-block" style="text-align: center">
+        <img src="Images/Electronics/QCWTC/TeslaCoil(.5done).png" alt="Tesla coil build so far" style="width: 60%">
+
+        <p style="text-align: left;">
+            I am currently working on a brand-new tesla coil circuit and setup which uses the so called
+            <em>quasi-continuous-waveform (QCW)</em> topology. This tesla coil will be the most advanced circuit so far,
+            built off an electrically isolated driver circuit which uses analog components and ASICs to generate
+            a PWM signal pulse with precise timing, frequency, and duty cycle. <strong>The mains-power AC signal is used
+            as a signal generator</strong> to create a PWM signal with increasing duty cycle.
+        </p>
+    </div>
+    <div class="green-text-block" style="text-align: center">
+        <img src="Images/Electronics/QCWTC/QCWLowVoltDriver-1.png" alt="Tesla coil circuit schematic" style="width: 100%">
+
+        <p style="text-align: left;">
+            The schematic above represents the medium-frequency driver for my new tesla coil's printed circuit board. The
+            only aspect not represented above is the power supply circuits on the board. Much of the topology is similar
+            to other dual-resonant tesla coils. I opted for an all analog approach with a PWM signal being generated
+            by 555, schmitt-trigger, and flip-flop ASICs as supposed to a microcontroller.<br>
+            <br>
+            The top circuit generates a PWM signal with pulses synced up to go high during the mains-AC sine wave's first
+            quarter. This is achieved through two 555 timers, one with the AC signal applied to it's trigger pin. Two potentiometers
+            control the pulse width and frequency.<br>
+            <br>
+            This interrupter signal is fed into the clear pin of a D flip-flop. Along with a filtered feedback signal from
+            induced voltage on an antenna. The final ramped-duty cycle PWM is generated. This is fed into a set of gate driver
+            ICs which drive the gate drive transformer in the center of the board. <br>
+            <br>
+            This drives the gates of the two IGBTs which switch the rectified mains power to the primary coil. This should
+            induce a very long duration ramped resonant signal with high power through the two coils. This project is yet to
+            be finished, stay tuned!
+        </p>
+    </div>
+
+    <figure>
+        <img src="Images/Electronics/QCWTC/CircuitBoard.png" alt="Circuit board" width=60% >
+        <figcaption style="width: 100%">
+            <p>
+                Here is the printed and populated circuit board!
+            </p>
+        </figcaption>
+    </figure>
+
+    <p class="header-text">
+        Driver-less Solid State Tesla Coil!
+    </p>
 
     <div class="green-text-block">
         <video id=tesla-vid controls="controls" width="250" name="Me playing with small tesla coil">
@@ -86,7 +133,6 @@
             of the voltage. A lot of people talk about the dangers of internal burns and nerve damage, the latter
             of which, I'm not sure about, but I do tend to conduct the arc through a screwdriver to prevent burns.
         </p>
-
     </div>
 
     <div class="assorted-showoff">

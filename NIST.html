@@ -64,7 +64,7 @@
         </p>
 
         <div class="date">
-            <p>Updated 6/6/2024</p>
+            <p>Updated 1/29/2025</p>
         </div>
 
         <div class="green-text-block">
@@ -77,74 +77,11 @@
                 and Technology during 2022(entanglement) and 2023(transduction). I focused largely on optics during
                 these periods but also made some neat devices!<br>
                 <br>
-                On the picure on the right I'm wearing a pair of <em>512nm reflective and 1024nm absorbtive (those
+                On the picture on the right I'm wearing a pair of <em>512nm reflective and 1024nm absorptive (those
                     are light wavelengths)</em> glasses which cost $2000! Worth it to prevent being blinded by a
                 laser!
             </p>
 
-        </div>
-
-        <div class="assorted-showoff" style="justify-content: center; text-align: center">
-            <img style="padding-right: 20px;" src="Images/Electronics/NIST/PCB.jpg" alt="Pockels Cell PCB" width=30%>
-            <img src="Images/Electronics/NIST/PockelsDriver.jpg" alt="Pockels Cell enclosure" width=30%>
-        </div>
-
-        <p class="green-text-block">In 2022, I worked on NIST's Bell Test. An experiment to test quantum entanglement
-            principals. We were using it to generate super duper perfect random numbers. Our setup quantum entangled
-            individual photons based on their polarity and sent them to opposite sides of the lab to be measured for
-            quantum phenomena.<br>
-            <br>
-            This little circuit I made controls the remotely controls the driver for the high speed polarization switch
-            component called a Pockels Cell. My device allows a user to output a high-resolution analog voltage (among
-            other functions) to control the angle of photon polarization. Remote operation is achieved with a custom
-            webserver and an ESP, meaning that the experiment can be operated completely remotely with my little box!
-            <br> (Yes the sides of the box are made of custom PCBs)
-        </p>
-
-        <figure class="float-left">
-            <img src="Images/Electronics/NIST/MeAtNist2.jpg" alt="Me at NIST" width=70%>
-            <figcaption style="width: 70%">
-                <p>
-                    Me at the Bell Test entanglement generator / photon transmitter.
-                </p>
-            </figcaption>
-        </figure>
-
-        <figure class="float-right">
-            <img src="Images/Electronics/NIST/MicrowaveCircuit.jpg" alt="Microwave Circuit" width=60%>
-            <figcaption style="width: 60%">
-                <p>
-                    A small circuit I whipped up which uses two op-amps, some IQ mixers, and some filters and
-                    attenuators to properly mix high frequency signals to control a microwave laser circuit.
-                    (complicated signal stuff)
-                </p>
-            </figcaption>
-        </figure>
-
-        <div class="assorted-showoff">
-            <figure>
-                <video controls="controls" width="120%" name="Implemented projects">
-                    <source src="Images/Electronics/NIST/ImplementedProjects.mp4">
-                </video>
-                <figcaption style="width: 120%">
-                    <p>Here's a short video of my electronics as implemented in the experimental setup. <br>
-                        <br>
-                        That noise in the background is our <em>pulse tube</em> refrigerator keeping the experiment at
-                        ~6 degrees
-                        kelvin!
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="Images/Electronics/VoltageAdderVCO.jpg" alt="Voltage Adder VCO" width=80%>
-                <figcaption style="width: 80%">
-                    <p>I made this device to add two voltages, one with ~17db gain and generate a signal based off the
-                        sum. This signal varies in frequency based off the voltage, outputting an ~500MHz sine wave.
-                        This signal was used to drive an acousto-optic modulator, which lets you change a laser's
-                        wavelength.</p>
-                </figcaption>
-            </figure>
         </div>
 
         <div class="green-text-block">
@@ -162,7 +99,7 @@
             </figure>
             <p>
                 In 2023, I worked on a project focused on <em> quantum transduction and optical networking of
-                    superconducting quantum computers.</em> Basically, quantum computers need to work at like,
+                superconducting quantum computers.</em> Basically, quantum computers need to work at
                 millikelvin temperatures, so they're all in sealed refrigerators and can't send signals to other quantum
                 computers. Our project would transduce the microwave signal in the quantum computer to an optical
                 signal, which could leave the fridge and be sent to another quantum computer! Communication! <br>
@@ -170,11 +107,114 @@
                 A large part of this experiment is conditioning the laser beam to be a super exact wavelength. This
                 involves bouncing the laser beam back and forth between two mirrors <em>(optical cavity)</em> and changing the
                 wavelength using an <em>acousto-optic modulator</em>, which is a crystal that can change the wavelength of light
-                passing through it based on an electrical signal you pass into it. My device drove the high frequency
-                electrical signal being pumped into this crystal.
+                passing through it based on an electrical signal you pass into it. I spent a lot of time setting up the
+                optical table for two of these "wavelength conditioners", one at room temperature and one with its optical
+                cavity in the cryogenic refrigerator. Aligning lasers is hard! I then built electronics to control the
+                acousto-optic modulator. My device drove the high frequency electrical signal being pumped into this crystal.
             </p>
         </div>
 
+        <div class="assorted-showoff">
+
+            <figure>
+                <img src="Images/Electronics/NIST/MicrowaveCircuit.jpg" alt="Microwave Circuit" width=100% >
+                <figcaption style="width: 100%">
+                    <p>
+                        A small circuit I built off a schematic which uses two op-amps, some IQ mixers, and some filters and
+                        attenuators to band pass, attenuate, and mix high frequency signals to control a microwave laser
+                        circuit. I did not design these op-amp PCBs, but I did populate them with the correct SMD components
+                        for the circuit.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/VoltageAdderVCO.jpg" alt="Voltage Adder VCO" width=80%>
+                <figcaption style="width: 80%">
+                    <p>I fully designed and built this circuit, which adds two voltages, one with ~17db, and one with unity gain.
+                        It then generates a signal based off the sum using a voltage controlled oscillator(VCO).
+                        This signal varies in frequency based off the voltage, outputting an ~500MHz sine wave.
+                        This signal was used to drive an acousto-optic modulator, which lets you change a laser's
+                        wavelength.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <figure style="text-align: center;">
+            <video controls="controls" width="70%" name="Implemented projects">
+                <source src="Images/Electronics/NIST/ImplementedProjects.mp4">
+            </video>
+            <figcaption style="width: 70%; margin-right: auto; margin-left: auto">
+                <p>Here's a short video of my electronics as implemented in the experimental setup. <br>
+                    <br>
+                    That noise in the background is our <em>pulse tube</em> refrigerator keeping the experiment at
+                    ~6 degrees
+                    kelvin!<br><br>
+                    I programmed a Red Pitaya FPGA as a proportional-integral-derivative controller to keep the laser
+                    wavelength fixed with feedback. In this circuit, the input to the Red Pitaya is a laser power
+                    meter, and the output is an analog voltage which is fed into my voltage-adder-VCO circuit. I also
+                    programmed the Red Pitaya with custom python scripts to automatically read and save voltage drift data.
+                </p>
+            </figcaption>
+        </figure>
+
+        <div class="green-text-block" style="justify-content: center; text-align: center; margin-top: 5em">
+            <img style="padding-right: 20px;" src="Images/Electronics/NIST/PCB.jpg" alt="Pockels Cell PCB" width=30%>
+            <img src="Images/Electronics/NIST/PockelsDriver.jpg" alt="Pockels Cell enclosure" width=30%>
+
+
+        <p style="text-align: left">In 2022, I worked on NIST's Bell Test. An experiment to test quantum entanglement
+            principals. We were using it to generate super duper perfect random numbers. Our setup quantum entangled
+            individual photons based on their polarity and sent them to opposite sides of the lab to be measured for
+            quantum phenomena.<br>
+            <br>
+            This circuit I helped to develop controls the remotely controls the driver for the high speed polarization switch
+            component called a Pockels Cell. My device allows a user to output a high-resolution analog voltage (among
+            other functions) to control the angle of photon polarization. Remote operation is achieved with a custom
+            webserver and an ESP, meaning that the experiment can be operated completely remotely with my little box!<br>
+            (Yes the sides of the box are made of custom PCBs)
+        </p>
+        </div>
+
+        <figure>
+            <img src="Images/Electronics/NIST/DAC_pockelPCB.JPG" alt="DAC_pockel PCB" width=70%>
+            <figcaption style="width: 70%">
+                <p>
+                    This circuit creates a precisely filtered 5v DC voltage with a buck converter, transistor series voltage
+                    regulator, and voltage regulator IC. This voltage is used as the voltage reference for the digital
+                    to analog converter(DAC) IC. This system is controlled by a SEEED Xiao RP2040.<br>
+                    <br>
+                    I wasn't very well
+                    versed in analog circuits at this point, so I tackled the digital electronics. <strong>I was in charge of
+                    the DAC, microcontroller, and output port of the circuit design</strong>. I programmed the microcontroller to
+                    interface with a Raspberry PI running a web server for remote control. I was also in charge of laying
+                    out the PCB to fit perfectly in one of our small aluminum cases! (bonus - I designed PCB covers for
+                    the case haha)
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="Images/Electronics/NIST/PockelControllerInterface.JPG" alt="Custom webserver interface" width=70%>
+            <figcaption style="width: 70%">
+                <p>
+                    I programmed a custom GUI for my tool in python using a library called "streamlit". This device
+                    sucessfully remotely controlled the <strong>analog voltage and digital breaker, power, and failure</strong> IO pins
+                    to the high voltage driver equipment for the Pockels Cell. The user simply connects to the
+                    Raspberry Pi's webserver using a python script with Dockerfile to open the GUI in their browser,
+                    and control the device.
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="Images/Electronics/NIST/MeAtNist2.jpg" alt="Me at NIST" width=70%>
+            <figcaption style="width: 70%">
+                <p>
+                    Me at the Bell Test entanglement generator / photon transmitter.
+                </p>
+            </figcaption>
+        </figure>
 
     </div>
 
