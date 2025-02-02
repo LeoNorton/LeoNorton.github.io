@@ -86,19 +86,34 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>
                 I started this class project in a team of four and two of them dropped engineering so didn't
-                really work on the project. I was able to teach my remaining team member a bit and get him doing
-                some stuff...<br>
+                really work on the project. I was able to teach my remaining team member soldering, programming, and some
+                electronics and get him onboard and doing some of the tasks for this project.<br>
                 <br>
-                I grinded really hard on this project, it is constructed out of wooden panels, uses a relay to
+                I worked really hard on this project, it is constructed out of wooden panels, uses a relay to
                 control a powerful fan to spin the turbine, and uses a custom blade-building system which I
                 designed and 3D printed. You can create both vertical and horizontal axis wind turbines.<br>
                 <br>
-                The
-                spinning speed is picked up by spinning a DC motor connected to the ADC of the Arduino through a
-                slightly clever voltage divider circuit. The Lego themed instructions to play the game are given
-                through a Unity game which interfaces with the Arduino through the serial port.
+                The spinning speed is picked up by spinning a DC motor connected to the analog to digital converter (ADC)
+                of the Arduino through an amplifying and rectifying circuit (see below). The Lego themed instructions to play
+                the game are given through a Unity game which interfaces with the Arduino through the serial port.
             </p>
+        </div>
 
+        <div class="green-text-block">
+            <img class="float-left" src="Images/Electronics/WindTurbine/Circuit.JPG" alt="Op amp circuit" width=50%>
+            <p>
+                The "quality" of the user-constructed turbine is based off how fast the turbine can spin a small
+                DC motor. The signal from this motor must be amplified to an <em>~5V peak-to-peak voltage</em> to avoid quantization
+                errors when read by the Arduino's ADC. The DC offset voltage error of the op-amp can be compensated for
+                by a trimmer potentiometer biasing the inverting input.<br>
+                <br>
+                I ran into the issue that depending on the
+                wind turbine design, the rotor could spin clockwise or counter-clockwise, creating a positive or negative
+                voltage input. I remedied this by simply running the signal through a small <em>full-bridge rectifier</em>.<br>
+                <br>
+                This circuit was slightly overkill for the project, but the features were a fun circuit design challenge.
+                I was able to design it completely by myself without referencing someone else's circuit design which is nice.
+            </p>
         </div>
 
         <div style="width: 70%;" class="green-text-block">
