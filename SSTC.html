@@ -32,7 +32,7 @@
             margin-top: 35px;
         }
 
-        #tesla-vid {
+        .tesla-vid {
             float: left;
             padding-right: 10px;
         }
@@ -60,22 +60,28 @@
 <div class="green-text" id="container">
 
     <p class="header-text">
-        Sneak-Peak at My New Quasi-Continuous-Waveform Coil!
+        My New Quasi-Continuous-Waveform Coil!
     </p>
 
     <div class="date">
-        <p>Updated 1/30/2025</p>
+        <p>Updated 2/12/2025</p>
     </div>
 
-    <div class="green-text-block" style="text-align: center">
-        <img src="Images/Electronics/QCWTC/TeslaCoil(.5done).png" alt="Tesla coil build so far" style="width: 60%">
+    <div class="green-text-block">
+        <video class=tesla-vid controls="controls" width="350" name="Me playing with small tesla coil">
+            <source src="Images/Electronics/QCWTC/CroppedFirstTest.mp4">
+        </video>
 
         <p style="text-align: left;">
             I am currently working on a brand-new tesla coil circuit and setup which uses the so called
-            <em>quasi-continuous-waveform (QCW)</em> topology. This tesla coil will be the most advanced circuit so far,
+            <em>quasi-continuous-waveform (QCW)</em> topology. This tesla coil is my most advanced TC circuit so far,
             built off an electrically isolated driver circuit which uses analog components and ASICs to generate
             a PWM signal pulse with precise timing, frequency, and duty cycle. <strong>The mains-power AC signal is used
-            as a signal generator</strong> to create a PWM signal with increasing duty cycle.
+            as a signal generator</strong> to create a PWM signal with increasing duty cycle.<br>
+            <br>
+            To the left is a video of the coil in action! Check out the arc lengths and its ability to easily light
+            a large compact-florescent bulb! This is a video of my first full power test with the coil, I'm still working
+            on getting much more arc-length out of this design!
         </p>
     </div>
     <div class="green-text-block" style="text-align: center">
@@ -95,27 +101,48 @@
             induced voltage on an antenna. The final ramped-duty cycle PWM is generated. This is fed into a set of gate driver
             ICs which drive the gate drive transformer in the center of the board. <br>
             <br>
-            This drives the gates of the two IGBTs which switch the rectified mains power to the primary coil. This should
-            induce a very long duration ramped resonant signal with high power through the two coils. This project is yet to
-            be finished, stay tuned!
+            This drives the gates of the two IGBTs which switch the rectified mains power to the primary coil. This induces
+            a very long duration ramped resonant signal with high power through the two coils. This project is yet to
+            be completely finished, to it's full power form, stay tuned!
         </p>
     </div>
 
     <figure>
-        <img src="Images/Electronics/QCWTC/CircuitBoard.png" alt="Circuit board" width=60% >
+        <img src="Images/Electronics/QCWTC/IMG_5283.jpg" alt="Circuit board" width=50% >
         <figcaption style="width: 100%">
             <p>
-                Here is the printed and populated circuit board!
+                Here is the printed and populated circuit board in the wooden enclosure I built.^^
             </p>
         </figcaption>
     </figure>
+
+    <div class="assorted-showoff">
+        <figure>
+            <img src="Images/Electronics/QCWTC/FirstLightPic2.JPG" alt="touching arcs" width=100% >
+            <figcaption style="width: 100%">
+                <p>
+                    Glorious photo of arc curving toward my hand, courtesy of Tyler and his
+                    niiice camera!
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="Images/Electronics/QCWTC/FirstLightPic3.JPG" alt="lighting bulb" width=100% >
+            <figcaption style="width: 100%">
+                <p>
+                    Here the coil is lighting the plasma in a normal tungsten light bulb.
+                </p>
+            </figcaption>
+        </figure>
+    </div>
 
     <p class="header-text">
         Driver-less Solid State Tesla Coil!
     </p>
 
     <div class="green-text-block">
-        <video id=tesla-vid controls="controls" width="250" name="Me playing with small tesla coil">
+        <video class=tesla-vid controls="controls" width="250" name="Me playing with small tesla coil">
             <source src="Images/Electronics/SSTC/120Vtest.mp4">
         </video>
 
