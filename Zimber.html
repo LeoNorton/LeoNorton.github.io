@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        #float-left {
+            float: left;
+            padding-right: 10px;
+        }
+
+        #float-right {
+            float: right;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <div class="green-text" id="container">
+
+        <p id="header-text">
+            The ZIMBER
+        </p>
+
+        <div class="date">
+            <p>Updated 3/1/2025</p>
+        </div>
+
+        <div class="green-text-block">
+            <img style="float: left; padding-right: 10px;" src="Images/Electronics/Zimber/ZimberBike.jpg"
+                alt="Zimber " width=50%>
+
+            <p>
+                Here's a nice little lighting system I made to take to Burning Man 2024. It was created for my
+                <a class="text-link" target="_blank"
+                   href="https://youtu.be/CQyXDd-kPMw?t=5"><strong>swing bike</strong></a>, which is an interesting type of custom bike modification which involves adding
+                an extra handlebar joint beneath the bike seat.
+                 This allows the rider to ride with the two wheels
+                out of line, such as one on the street and one on the sidewalk.<br>
+                <br>
+                The glowy lighting system looks like the bike is covered in <em>blinking eyes</em>!
+            </p>
+
+        </div>
+
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/Zimber/ZimberCloseup.jpg" alt="Zimber Closeup" width=80%>
+                <figcaption style="width: 80%">
+                    <p>
+                        The control board works in an interesting way, there are two buttons. One which controls the pattern
+                        of the LED lights, "rainbow", "blinking eyes" etc. and one button which adjusts a "modifier" number.
+                        This number does a different thing for each pattern. With the "rainbow" pattern it adjusts the speed
+                        for example, but for the "fire" pattern, it adjusts how sparse the fire is.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/Zimber/Zimber.jpg" alt="Zimber board" width=100%>
+                <figcaption style="width: 100%">
+                    <p>The effects status
+                        are displayed on a little LCD screen! I made this on a solderable breadboard. I used every single kilobyte of memory on this
+                    super cheap arduino nano!</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="green-text-block" style="text-align: center;">
+            <div class="assorted-showoff">
+                <figure>
+                    <img src="Images/Electronics/Zimber/ZimberFireplace.jpg" alt="Zimber in the fireplace" width=80%>
+                    <figcaption style="width: 80%">
+                        <p>
+                            Now that Burning Man is over for the year, I put the Zimber into our apartment's fake fireplace
+                            thing. Here's Kaan sitting in it during a party with the smoke machine running lol.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/Electronics/Zimber/ZimberEyes.jpg" alt="Zimber eyes 3d printing" width=100%>
+                    <figcaption style="width: 100%">
+                        <p>A photo of me printing out the eyes for the Zimber, made of transparent filament</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <p class="footer">
+        Contact me at
+        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    </p>
+
+
+</body>
+
+</html>

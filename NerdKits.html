@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        #float-left {
+            float: left;
+            padding-right: 10px;
+        }
+
+        #float-right {
+            float: right;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <div class="green-text" id="container">
+
+        <p id="header-text">
+            NERD KITS
+        </p>
+
+        <div class="date">
+            <p>Updated 3/1/2025</p>
+        </div>
+
+        <div class="green-text-block">
+            <img style="float: left; padding-right: 10px;" src="Images/Electronics/NerdKits/Shipping%20(2).jpg"
+                alt="Power Supply" width=50%>
+
+            <p>
+                What are <em>"Nerd kits"</em>? They're electronics kits from a bunch of old MIT classes, such as <a class="text-link" target="_blank"
+                href="https://web.mit.edu/6.111/www/project-photos/s98-projects-photos/s98projects.html">digital systems</a>.
+                They contain a <strong>huge</strong> breadboard with an integrated power supply to give +-15 and +5 volt
+                power to the breadboard rails! They have storage for wires and also a side compartment with a components
+                kit. <strong>These are old kits!</strong> They're full of old 70s and 80s components. <br>
+                <br>
+                During fall 2024, Wireless Club acquired this amazing gift of ~30 of these kits from the generous <strong>Henry Houh</strong> (of the film "21" fame).
+                They make the perfect project boxes. Circuits can be built in them and just closed up and stored for a later time.
+            </p>
+
+        </div>
+
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/NerdKits/TransistorLatch.jpg" alt="Nerd kit inside" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        Here's the inside of a kit, with a small single-transistor flip-flop built on it.
+                        You can see the yellow components case next to it.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/NerdKits/Shelf.JPG" alt="nerd kit full of electronics" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        I built this shelf to perfectly house the Nerd Kits, people have their own kit which they
+                        check out.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="green-text-block" >
+            <video style="float: left; padding-right: 0.5em" controls="controls" width="25%" name="metal detector">
+                <source src="Images/Electronics/NerdKits/MetalDetector.MOV">
+            </video>
+            <video style="float: right; padding-left: 0.5em" controls="controls" width="50%" name="electric lighter">
+                <source src="Images/Electronics/NerdKits/Lighter.MOV">
+            </video>
+
+            <p>
+                Here are a couple videos of people building simple circuits on the kits! To the left
+                is a 555 based <strong>metal detector</strong> which uses a sensitive oscillating lc circuit to produce
+                a tone based on the presence of metal!<br>
+                <br>
+                To the right is a video of an <strong>arc lighter</strong> circuit, which runs off a custom inverter
+                designed with a single transistor and primary feedback from the ignition transformer.
+            </p>
+        </div>
+
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/NerdKits/Alarm.jpg" alt="Alarm circuit" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        Simple 555 and LC circuit piezo driver to create a very loud alarm.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/NerdKits/VUMeter.jpg" alt="nerd kit full of electronics" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        A nerd kit with a simple VU-meter and low frequency modulation circuit built on it.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/NerdKits/TubeTest.JPG" alt="Vacuum tube on nerd kit" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        Vlad and I are getting started on vacuum tube tech in the nerd kit! The logic
+                        levels need to be supplied separately due to strange and high voltage levels,
+                        we're doing this with boost converters right now.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/NerdKits/Synth.JPG" alt="Nerd kit with synth" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        The start of a musical synthesizer using schmitt triggers exponential VCOs and
+                        simple transistor VCRs! The kit contains a simple pre-amp and class A amplifier.
+                        There's more to be added to this!
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+    <p class="footer">
+        Contact me at
+        <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+    </p>
+
+
+</body>
+
+</html>

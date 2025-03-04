@@ -64,7 +64,7 @@
     </p>
 
     <div class="date">
-        <p>Updated 2/12/2025</p>
+        <p>Updated 3/1/2025</p>
     </div>
 
     <div class="green-text-block">
@@ -92,22 +92,22 @@
         <img src="Images/Electronics/QCWTC/QCWLowVoltDriver-1.png" alt="Tesla coil circuit schematic" style="width: 100%">
 
         <p style="text-align: left;">
-            The schematic above represents the medium-frequency driver for my new tesla coil's printed circuit board. The
+            The schematic above represents the <em>medium-frequency driver</em> for my new tesla coil's printed circuit board. The
             only aspect not represented above is the power supply circuits on the board. Much of the topology is similar
-            to other dual-resonant tesla coils. I opted for an all analog approach with a PWM signal being generated
-            by 555, schmitt-trigger, and flip-flop ASICs as supposed to a microcontroller.<br>
+            to other <strong>solid state tesla coils</strong>. I opted for a <em>no-microcontroller</em> approach with a PWM signal being generated
+            by 555, schmitt-trigger, and flip-flop ASICs.<br>
             <br>
-            The top circuit generates a PWM signal with pulses synced up to go high during the mains-AC sine wave's first
-            quarter. This is achieved through two 555 timers, one with the AC signal applied to it's trigger pin. Two potentiometers
-            control the pulse width and frequency.<br>
+            The top circuit generates a PWM signal with pulses synced up to go high during the <em>mains-AC</em> sine wave's first
+            quarter. This is achieved through two 555 timers. A zero-voltage detector with mains as the input sends its pulse output
+            signal to the trigger pin of the first monostable 555. Two potentiometers control the pulse <strong>width</strong> and <strong>frequency</strong>.<br>
             <br>
-            This interrupter signal is fed into the clear pin of a D flip-flop. Along with a filtered feedback signal from
-            induced voltage on an antenna. The final ramped-duty cycle PWM is generated. This is fed into a set of gate driver
-            ICs which drive the gate drive transformer in the center of the board. <br>
+            This interrupter signal is fed into the clear pin of a <strong>D flip-flop</strong>. Along with a filtered feedback signal from
+            induced voltage on an antenna. The final ramped-duty cycle PWM is generated. This is fed into a set of <em>UCC732X</em> gate driver
+            ICs which drive the <strong>gate drive transformer</strong> in the center of the board. <br>
             <br>
-            This drives the gates of the two IGBTs which switch the rectified mains power to the primary coil. This induces
-            a very long duration ramped resonant signal with high power through the two coils. This project is yet to
-            be completely finished, to it's full power form, stay tuned!
+            This drives the gates of the two <em>IGBTs</em> which switch the rectified mains power to the primary coil. This induces
+            a <strong>very long duration ramped resonant signal</strong> with high power through the two coils. This project is yet to
+            be completely finished to it's full power form, stay tuned!
         </p>
     </div>
 
