@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(77, 101, 197, 0.4);
+            /* Example color with transparency */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1;
+            /* Ensure it is behind other content */
+        }
+
+        body {
+            background-color: #2c3d65;
+            background-image: url("Images/Games/HookedOnHumans/Background.png");
+            background-size: 100%;
+            margin: 0%; /* Remove default body margin */
+            padding: 0 10% 10% 10%;
+        }
+
+        #header-text {
+            color: #BAD7F2;
+            font-family: Makisupa, monospace;
+            font-size: 1.15em;
+            border: 3px solid #BAD7F2;
+            padding: 2%;
+            background-color: #A02C1F;
+            text-align: center;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 45px;
+        }
+
+        .assorted-showoff {
+            display: flex;
+            width: 100%;
+        }
+
+        #main-banner {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+            display: block;
+            text-align: center;
+        }
+
+        #desert-scene {
+            float: left;
+            margin-right: 20px;
+        }
+
+        #itch-link {
+            position: absolute;
+            right: 75%;
+            top: 15%;
+            width: 10%;
+        }
+
+        #check-itch-text {
+            position: absolute;
+            color: rgb(222, 232, 240);
+            background-color: rgb(238, 97, 91);
+            padding: 10px;
+            right: 74.5%;
+            top: 40%;
+            width: 10%;
+        }
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+
+<div id="container">
+
+    <figure>
+        <a target="_blank" href="https://elanmakesgames.itch.io/hooked">
+            <img id="itch-link" src="Images/ItchLogo.png" alt="Itch Link">
+        </a>
+        <p>
+        <figcaption id="check-itch-text">
+            Play it in your browser for free here!
+        </figcaption>
+        </p>
+    </figure>
+
+    <div class="date">
+        <p>Updated 3/3/2025</p>
+    </div>
+
+    <img id="main-banner" src="Images/Games/HookedOnHumans/HookedOnHumans.gif" alt="Candy Loser Thumbnail" width="50%">
+    <div class="text-block" style="background-color: #2c3d65">
+        <img id="desert-scene" src="Images/Games/HookedOnHumans/TitleScreen.JPG" alt="Opening screen" width="50%">
+        <p>
+            Hooked on Humans was our submission for the GMTK 2023 Game Jam. We made it in maybe two days. It sticks to the
+            theme of the jam, <strong>role reversal</strong> in that it's a fish "fishing" for people. The game is a beautiful,
+            high octane journey to fish procedurally generated humans while listening to a really cool song.
+        </p>
+    </div>
+    <div class="text-block" style="background-color: #2c3d65">
+        <img style="float: right" src="Images/Games/HookedOnHumans/Screenshot1.JPG" alt="GameplayShot" width="50%">
+        <p>
+            The most amazing part of this game is the great musical theme. It was recorded by my friends<strong> Spencer
+            and Jackson</strong>, make sure to <em>sound-on</em>. Each human in this game was procedurally generated, including their
+            dialogue when they're caught. Give it a play!
+        </p>
+    </div>
+
+    <p style="color: white"><strong>
+        Credits:<br>
+        Code & design - Elan R. & Leo N.<br>
+        Art - Meghan M.<br>
+        Sound - Spencer R. & Jackson F.<br>
+        Inspiration - Asher H. & Will O. & Skylar M.<br></strong>
+    </p>
+
+</div>
+
+<p class="footer" style="background-color: #2c3d65">
+    Contact me at
+    <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+</p>
+
+
+</body>
+
+</html>
