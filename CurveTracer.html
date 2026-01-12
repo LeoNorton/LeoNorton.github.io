@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1; /* Ensure it is behind other content */
+        }
+
+        .header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        .tesla-vid {
+            float: left;
+            padding-right: 10px;
+        }
+
+        #tesla-builds-pic {
+            float: right;
+            padding-left: 50px;
+        }
+
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+
+<div class="green-text" id="container">
+
+    <p class="header-text">
+        Mini Curve Tracer!
+    </p>
+
+    <div class="date">
+        <p>Updated 1/5/2026</p>
+    </div>
+
+    <figure style="text-align: center; margin-right: auto; margin-left: auto">
+        <img src="Images/Electronics/CurveTracer/CurveTracer.jpg" width=70% >
+        <figcaption style="width: 100%">
+            <p style="text-align: center">
+                Finished Curve tracer measuring a BJT.
+            </p>
+        </figcaption>
+    </figure>
+
+    <div class="green-text-block">
+        <video style="float: right" autoplay loop muted playsinline width=50%>
+            <source src="Images/Electronics/CurveTracer/CurveTracer.mov" type="video/mp4"/>
+        </video>
+
+        <p style="text-align: left;">
+            I've always loved the idea of being able to <strong>visualize</strong> the differences between components by looking at
+            a generated shape. This device is a classic transistor curve tracer, which plots the current vs voltage plot
+            of whatever transistor is inserted into the <em>ZIF connector</em>. It then applies various base currents or gate voltages
+            and draws a new curve on the same plot.<br>
+            <br>
+            The final construction of this project is on a stiff piece of <em>stripboard</em>, an <em>Arduino pro mega</em> is the brains
+            of the device and allows for a <strong>full touchscreen interface</strong>! This curve tracer allows for BJTs, Mosfets, and J-Fets.
+            The device is measured as soon as it's inserted, <em>detecting a voltage rise across the current sensing resistor</em>.
+            The settings for the difference between control voltage steps can be dialed in - in a menu. <br>
+            <br>
+            This device is hugely inspired by this Instructables! Although I tried to do almost all the design work myself.
+        </p>
+    </div>
+
+    <div class="assorted-showoff">
+        <figure>
+            <img src="Images/Electronics/CurveTracer/TypicalNPN.JPG"touching arcs" width=70% >
+            <figcaption style="width: 70%">
+                <p>
+                    This is a typical <strong>NPN transistor curve</strong>. This device has become part of my common desk assortment,
+                    its amazing in <em>finding breakdown voltages, matching transistors, checking HFE, checking when a transistor
+                    becomes saturates, and differentiating chinese fakes from real transistors!</em> I use it a ton!
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="Images/Electronics/CurveTracer/CurveTracerDACoutput.JPG" alt="DAC output" width=110% >
+            <figcaption style="width: 110%">
+                <p>
+                    Here's an oscilloscope reading of the <strong>"step" voltages</strong> applied to the base/gate
+                    of the transistor and the accompanying voltage sweep across the <em>collector-emitter/drain-source.</em> Each step
+                    represents one curve on screen, while this whole image represents an entire plot of the curve tracer.
+                </p>
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<p class="footer">
+    Contact me at
+    <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+</p>
+
+
+</body>
+</html>

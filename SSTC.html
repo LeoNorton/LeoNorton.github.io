@@ -64,7 +64,7 @@
     </p>
 
     <div class="date">
-        <p>Updated 3/1/2025</p>
+        <p>Updated 1/5/2026</p>
     </div>
 
     <div class="green-text-block">
@@ -79,8 +79,8 @@
             I am currently working on a brand-new tesla coil circuit and setup which uses the so called
             <em>quasi-continuous-waveform (QCW)</em> topology. This tesla coil is my most advanced TC circuit so far,
             built off an electrically isolated driver circuit which uses analog components and ASICs to generate
-            a PWM signal pulse with precise timing, frequency, and duty cycle. <strong>The mains-power AC signal is used
-            as a signal generator</strong> to create a PWM signal with increasing duty cycle.<br>
+            high power signal pulses with precise timing and frequency. <strong>The mains-power AC signal is used
+            as a signal generator</strong> to start an arc just as power increases!<br>
             <br>
             These are some videos of the coil in action! Check out the arc lengths and its ability to easily light
             a large compact-florescent bulb! To the left is a video of my first full power test with the coil, I'm still working
@@ -95,14 +95,14 @@
             The schematic above represents the <em>medium-frequency driver</em> for my new tesla coil's printed circuit board. The
             only aspect not represented above is the power supply circuits on the board. Much of the topology is similar
             to other <strong>solid state tesla coils</strong>. I opted for a <em>no-microcontroller</em> approach with a PWM signal being generated
-            by 555, schmitt-trigger, and flip-flop ASICs.<br>
+            by 555, schmitt-trigger, and flip-flop ASICs. This is very close to the topology popularized by Lone Oceans!<br>
             <br>
-            The top circuit generates a PWM signal with pulses synced up to go high during the <em>mains-AC</em> sine wave's first
+            The top circuit generates a square-wave signal with pulses synced up to go high during the <em>mains-AC</em> sine wave's first
             quarter. This is achieved through two 555 timers. A zero-voltage detector with mains as the input sends its pulse output
             signal to the trigger pin of the first monostable 555. Two potentiometers control the pulse <strong>width</strong> and <strong>frequency</strong>.<br>
             <br>
             This interrupter signal is fed into the clear pin of a <strong>D flip-flop</strong>. Along with a filtered feedback signal from
-            induced voltage on an antenna. The final ramped-duty cycle PWM is generated. This is fed into a set of <em>UCC732X</em> gate driver
+            induced voltage on an antenna. The final driving, square wave signal, is generated. This is fed into a set of <em>UCC732X</em> gate driver
             ICs which drive the <strong>gate drive transformer</strong> in the center of the board. <br>
             <br>
             This drives the gates of the two <em>IGBTs</em> which switch the rectified mains power to the primary coil. This induces

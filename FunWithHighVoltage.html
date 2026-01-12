@@ -64,12 +64,12 @@
         </p>
 
         <div class="date">
-            <p>Updated 12/25/2024</p>
+            <p>Updated 1/5/2026</p>
         </div>
 
         <div class="green-text-block">
             <video style="float: right;" autoplay loop muted playsinline width="25%">
-                <source src="Images/Electronics/HighVoltage/IgnitionCoil.MOV" type="video/mp4" />
+                <source src="Images/Electronics/HighVoltage/IgnitionCoil.mp4" type="video/mp4" />
             </video>
 
             <p>
@@ -89,68 +89,119 @@
 
         </div>
 
-        <div class="assorted-showoff">
-            <figure>
-                <img src="Images/Electronics/BurnBoy/BuildBack.jpg" alt="Back of console" width=70%>
-                <figcaption style="width: 70%">
-                    <p>
-                        Heres the back of the device. I spent a long time on the silkscreen graphics lol <em>(FYI Zander is
-                        my name at the burn)</em>. I named this the <strong>Burn Boy(TM)</strong> as a take on a GameBoy. The insult on the
-                        back balances out the fact that I'm giving you a really nice gift haha.
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <video controls="controls" width="120%" name="Implemented projects">
-                    <source src="Images/Electronics/BurnBoy/Prototype.mp4">
-                </video>
-                <figcaption style="width: 100%">
-                    <p>
-                        Heres an early prototype of the device playing Tetris on a solderable breadboard. I actually
-                        <strong>sold this board</strong> for like $15 at a party I threw; some other NEU student who really wanted it XD.
-                    </p>
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="green-text-block" style="text-align: center;">
-            <img src="Images/Electronics/BurnBoy/3DRender.jpg" alt="Slayer Exciter Circuit" width=40%>
+        <div class="green-text-block">
+            <video style="float: right;" autoplay loop muted playsinline width="40%">
+                <source src="Images/Electronics/HighVoltage/MOTArc.mp4" type="video/mp4" />
+            </video>
 
             <p>
-                Here's a cool 3D render of the console that I made while designing the PCB in KiCad.
+                As an example of this dichotomy between voltage and current in an arc, here is a much lower, 2000v
+                arc from a microwave oven transformer with two resonant capacitors. This arc is probably 20x the length!
+                This is because a microwave oven transformer outputs a much larger, ~500mA. Again, a long arc is only
+                attained by "drawing" out the arc.<br>
+                <br>
+                This arc is also much, much more dangerous due to the high currents. Most people agree that touching
+                microwave oven transformer arcs are a good way to die before you hit the ground!
+            </p>
+
+        </div>
+
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/HighVoltage/JacobsLadder.JPG" alt="mini jacobs" width=70%>
+                <figcaption style="width: 70%">
+                    <p>
+                        Jacob's Ladders are always fun little ways to test an arc. Just two little pieces of wire and the arc will race up!
+                        This tiny ladder is driven off a coil from an arc lighter. ^^^<br>
+                        <br>
+                        <br>
+                        ------------------------------------><br>
+                        This is a small jacobs ladder made with the 6KV, 30mA, ignition coil arc
+                    </p>
+                </figcaption>
+            </figure>
+
+            <video style="float: right;" autoplay loop muted playsinline width="40%">
+                <source src="Images/Electronics/HighVoltage/JacobsLadder.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="green-text-block" >
+            <video style="float: left; padding-right: 1em" autoplay loop muted playsinline width="40%">
+                <source src="Images/Electronics/HighVoltage/VoltageMultiplier%20(2).mp4" type="video/mp4" />
+            </video>
+
+            <p>
+                The simple addition of a couple of high voltage capacitors and diodes to the end of a transformer
+                can yield huge voltage gain and super energetic pulses! This configuration is the common voltage multiplier
+                or Walton Cockroft generator.<br>
+                <br>
+                  If you ever see those popular "high voltage modules" in the black epoxy tube
+                on the internet, they contain a single ignition transformer and a 2 stage voltage multiplier.
             </p>
         </div>
 
         <div class="assorted-showoff">
             <figure>
-                <img src="Images/Electronics/BurnBoy/Assembly.jpg" alt="Me assembling burn boys" width=100%>
+                <img src="Images/Electronics/HighVoltage/LYBoutside.jpg" alt="Small hv box" width=100%>
                 <figcaption style="width: 100%">
                     <p>
-                        Here was my assembly line, I hand soldered on the smd components for most of the
-                        burn boys, this was before I started doing everything reflow. You can see my ATtiny
-                        programmer I made (top right) to easily program each processor.
+                        This is a cute little high voltage box I made for a fathers day present I think?
+                        It has a singular button which initiates the arc run off a salvaged vape-battery.
                     </p>
                 </figcaption>
             </figure>
 
             <figure>
-                <img src="Images/Electronics/BurnBoy/Pile.jpg" alt="Pile of burn boys" width=100%>
+                <img src="Images/Electronics/HighVoltage/LYBlit.PNG" alt="Small hv box lit" width=100%>
                 <figcaption style="width: 100%">
                     <p>
-                        Big pile of burn boys to be given away at the burn!
+                        ...What happens when you hit the button! The arc goes from pad to pad of the proto-board,
+                        creating an "L" shaped pattern, completing the message! I'll add that it doesn't always create
+                        an "L", but sometimes a "Z" or inverted L. For some reason though, the tolerances in this proto-board
+                        mean that an "L" is usually drawn by the arc.
                     </p>
                 </figcaption>
             </figure>
         </div>
-        <figure>
-            <img src="Images/Electronics/BurnBoy/BurnBoyCase.jpg" alt="Burn Boy cases" width=70%>
+        <figure style="text-align: center">
+            <img src="Images/Electronics/HighVoltage/CapExplosion2.jpg" alt="Cap Explosion" width=70%>
             <figcaption style="width: 100%">
                 <p>
-                    Some lucky few got a 3d printed case with a print-in place hinge and latch that I designed.
+                    Some people consider 110V to be high... and since we're talking about sparks, I'll talk about capacitors!<br>
+                    <br>
+                    This is a picture of me discharging a large capacitor through a screwdriver. The sparks come from the metal of the
+                    screwdriver and contacts vaporizing upon impact!<br>
+                    Ok, capacitor explosions like this aren't actually extremely high voltage, and rather, are violent
+                    due to very high current! Still, I'm putting it on this page for now.
                 </p>
             </figcaption>
         </figure>
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/HighVoltage/CapExplosion.jpg" alt="Cap pop" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        Plugging a small capacitor into a wall creates a sparking, small little explosion! I believe these
+                        are the perfect <strong>"indoor firecrackers"</strong> as they are (relatively) quiet, super cheap, and don't cause much damage.
+                        Different sized capacitors behave differently however, and shrapnel should always be watched out for!<br>
+                        <br>
+                        I should probably mention this: don't do this yourself! Messing with wall power and exploding shrapnel is bad!!
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/HighVoltage/8FF5F539-057A-41E0-9F3C-FFF4CD34A9EA.jpg" alt="CapacitorExplo" width=100%>
+                <figcaption style="width: 100%">
+                    <p>
+                        Videoing a capacitor explosion is another part of the fun! Forwarding to just the right frame, you
+                        can almost always get a <strong>frame of pure, giant sparks, and a frame of intensely bright glow!</strong> Here's an
+                        example of the blue glow of the capacitor lighting up an entire room as it explodes!
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
     </div>
 
     <p class="footer">
