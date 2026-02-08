@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NortWare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*used for background rectangle*/
+        #container {
+            top: 0;
+            right: 8%;
+            left: 8%;
+            bottom: 0;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(189, 247, 183, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            z-index: -1; /* Ensure it is behind other content */
+        }
+
+        #header-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 2em;
+            border: 3px solid #2c4229;
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 35px;
+        }
+
+        .header2-text {
+            color: #141e13;
+            font-family: Makisupa, monospace;
+            font-size: 1.7em;
+            /*border: 3px solid #2c4229;*/
+            padding: 1%;
+            background-color: #5f815c;
+            text-align: center;
+            margin-right: 30%;
+            margin-left: 30%;
+            margin-top: 35px;
+        }
+
+        .floatL {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .floatR {
+            float: right;
+            padding-left: 50px;
+        }
+
+    </style>
+</head>
+
+<div class="top-bar">
+    <a class="top-bar-text" target="_self" href="index.html">HOME</a>
+    <a class="top-bar-text" target="_self" href="GamesPage.html">GAMES</a>
+    <a class="top-bar-text" target="_self" href="ElectronicsPage.html">ELECTRONICS</a>
+    <a class="top-bar-text" target="_self" href="MiscPage.html">MISC</a>
+    <a class="top-bar-text" target="_self" href="AboutMePage.html">ABOUT ME</a>
+</div>
+
+<body>
+
+<link rel="icon" type="image/png" href="Images/Favicon.png">
+
+<div class="green-text" id="container">
+
+    <p id="header-text">
+        "Guff" Solid State Tesla Coil!
+    </p>
+
+    <div class="date">
+        <p>Updated 2/4/2026</p>
+    </div>
+
+    <div class="green-text-block">
+        <video class=floatL autoplay loop muted playsinline width="50%">
+            <source src="Images/Electronics/Guff%20SSTC/ToploadTest1.mp4" type="video/mp4" />
+        </video>
+
+        <p>
+            My new tesla coil is an ~500W, half bridge IGBT driven, interrupted, 2.5ft tall coil! My construction has improved a bit with
+            this nice computer power supply case that I gutted for my electronics which serves as a faraday cage for my low
+            voltage circuitry! <br>
+            <br>
+            This page is pretty technical, and all about the circuit! See also <a class="text-link" target="_blank" href="SSTC.html">SSTC</a>
+            or <a class="text-link" target="_blank" href="SlayerExciters.html">Slayer Exciters</a> for more interesting beginner information!<br>
+            <br>
+            The coil was built with a couple optional modes of operation: <strong>staccatto operation</strong> to create longer and straighter
+            arcs, and <strong>dual resonant operation</strong> to raise power input in the primary coil to kilowatts. Currently, these
+            two modes of operation are still WIP. This coil runs off antenna feedback and the half bridge is driven by DC power
+            interrupted by square pulses. It achieves almost 30cm long arcs at full power levels!
+        </p>
+    </div>
+
+    <div class="green-text-block">
+        <img class="floatL" src="Images/Electronics/Guff%20SSTC/FinishedSSTC.jpg" alt="Finished TC" width="30%">
+
+        <video class=floatR controls="controls" width="500" name="Testing coil for first time">
+            <source src="Images/Electronics/Guff%20SSTC/BusCapTest1.mp4">
+        </video>
+        <p>
+            On the right is a long video of my first test of the coil, it's using a tiny cap as a topload, limiting its arc length
+            by increasing the resonant frequency of the secondary. The rolling shutter of my camera occasionally prevents
+            the arc from being seen.<br>
+            <br>
+            The construction of this tesla coil was during my time at the Michigan Cooperative House "Luther", hence the
+            name "<strong>Guff</strong> tesla coil" which comes from the commune term meaning: "<strong>G</strong>eneral <strong>U</strong>nrestricted
+            <strong>F</strong>ree <strong>F</strong>ood" but extends past just food to all community items / goods. I made
+            this for the annual Halloween party!<br>
+            <br>
+
+            I've occasionally had the issue that high power being drained into the earth ground of the wall outlet
+            have created a standing voltage on the ground of the entire circuit in the room. This causes arcs to start
+            coming out of things like USB-C cords and generally frying electronics on the same circuit. Because of this
+            undesired effect, I'm doing all of this experimentation in a spare room in the basement of the commune.
+        </p>
+    </div>
+
+    <div class="green-text-block">
+    <figure>
+        <img class=floatL src="Images/Electronics/Guff%20SSTC/FullCircuit.jpg" alt="Finished Circuit Interior" width=60%>
+            <p>
+                Here is the inside of my driver box. You can see the "Manhattan" high power circuit for
+                my high power half-bridge driver. I prototyped the circuit on copper clad for power, and to avoid inductive
+                traces. I use the <a class="text-link" target="_blank" href="https://youtu.be/vq968AFgPhg?t=139">"Leo's Bag of Tricks"</a>
+                circuit carving technique, I've made a couple of these custom x-acto carvers as well.<br>
+                <br>
+                The board mounted higher up contains the two potentiometers which adjust the interrupter for
+                the circuit. The dense, green board in the corner contains the IGBT gate drivers, power regulators, and flip-flop
+                circuitry needed for dual resonance mode.<br>
+                <br>
+                Some elements of this circuit get HOT! I've kept the power supply fan in the box!
+            </p>
+    </figure>
+    </div>
+
+    <div class="green-text-block">
+        <p class="header2-text">
+            All about: The Half Bridge
+        </p>
+        <div class="assorted-showoff">
+            <figure>
+                <img src="Images/Electronics/Guff%20SSTC/halfBridge.jpg" alt="halfBridgePlan" width="100%">
+                <figcaption style="width: 100%">
+                    <p>Here is my plan on paper for how to construct the half bridge to drive my primary coil! Of
+                        course this is based on my circuit design first. The schematic capture for the actual circuit
+                        is below.<br>
+                        <br>
+                        This paper does have a little bit of the math for expected currents through the circuit and primary capacitor value for dual-resonance
+                        mode!</p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/Guff%20SSTC/PowerDriver1.jpg" alt="halfBridgeActual" width="100%">
+                <figcaption style="width: 100%">
+                    <p>This is my constructed half-bridge driver! The heat sinks are actually aluminum pieces from the
+                    frame of a whiteboard which I cut up and drilled into. I found them to be a fine size as my IGBTs
+                    don't actually get hot in this circuit! Maybe it's good design?? Luck?</p>
+                </figcaption>
+            </figure>
+        </div>
+        <figure>
+            <img  src="Images/Electronics/Guff%20SSTC/HalfBridgeSchematic.JPG" alt="half bridge schematic" width="100%">
+        </figure>
+        <p>
+            This is the schematic capture for the completed half-bridge driver. These <strong>IRFP460 IGBTs</strong> are rated for upwards
+            of 500V at 20A, so I shouldn't stress them too much during the operation of this coil (theoretically).<br>
+            <br>
+            Notice that both gates are driven through a <strong>gate drive transformer (GDT)</strong>. The GDT (along with gate resistor and diode)
+            ensures perfect inversion of the two IGBT's on-states, stepped gate drive voltage for Vt, and electrical isolation from
+            the low voltage electronics.<br>
+            <br>
+            In my attempt to protect the IGBTs from voltage spikes from flyback in the primary, I've added 200V TVS diodes
+            across the Collector-Emitter, as well as an <strong>RC snubber</strong> calculated to prevent an ~4.25MHz ringing during
+            operation.<br>
+            <br>
+            The idea of the switch across the capacitors in the center is to enable or disable so-called <strong>"dual resonant"</strong>
+            mode, where opening the switch to add the capacitor would allow the primary and capacitor to become its own
+            resonant circuit, allowing for higher power.
+        </p>
+    </div>
+
+    <div class="green-text-block">
+        <p class="header2-text">
+            All about: Gate Driving Circuit
+        </p>
+        <div class="assorted-showoff">
+            <figure>
+                <img style="padding-right: 40em" src="Images/Electronics/Guff%20SSTC/Staccatto%20LV%20driver.JPG" alt="Low voltage driving schematic" width="100%">
+                <figcaption style="width: 100%">
+                    <p>
+                        I designed the layout of these boards in <a class="text-link" target="_blank" href="https://bancika.github.io/diy-layout-creator/">"DIY Layout creator"</a>.
+                        It's a very simple but sweet software which allows you to layout prototype boards, then flip them to
+                        see the top and bottom side wiring.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/Electronics/Guff%20SSTC/PrototypingTechnique.jpg" alt="solder prototyping" width="100%">
+                <figcaption style="width: 100%">
+                    <p>
+                        This is not great engineering practice, but I find it extremely meditative to prototype my boards
+                        using the "giant solder blob" technique. My last (less advanced) coil used a proper PCB, but I
+                        wanted to whip this one up in a matter of a couple weeks. I have found this reliable enough as
+                        far as prototyping techniques go.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <figure>
+            <img  src="Images/Electronics/Guff%20SSTC/DriverSchem.JPG" alt="Gate Driver Schematic" width="100%">
+        </figure>
+        <p>
+            This is the schematic capture for the gate driver board! This board has a few functions. It rectifies
+            and regulates power for all the low voltage circuitry. It receives a high Vpp amplitude sine signal
+            from the antenna and uses diode clamping and a schmitt buffer to convert it to digital, where it can be
+            processed as an input to digital chips. The interrupter is inputted and powered through "J1", and the two
+            UCC3732X ICs drive the gate drive transformer (GDT).<br>
+            <br>
+            <strong>The flip-flop</strong> or 74HCT74 ic is always synchronizing the inverter to the interrupter. This prevents
+            the interrupter from switching off the inverter right in the middle of a particularly large current draw, possibly
+            killing the IGBTs. This feature is only needed when operating in <em>dual resonant</em> driving mode.<br>
+            <br>
+            <strong>The antenna</strong> is just a piece of wire (of any length) that exits the faraday cage (metal box) which the
+            circuits are otherwise contained in. Just from EMI, a voltage much greater than 5v is produces, allowing the
+            interrupter to be driven based off feedback from the tesla coil.<br>
+            <br>
+            Finally, the gate drive ICs are dedicated inverting(37322) and noninverting(37321) types, and drive current
+            into the GDT on the half bridge board!
+        </p>
+    </div>
+
+    <div class="green-text-block">
+        <p class="header2-text">
+            All about: The Interrupter
+        </p>
+        <div class="assorted-showoff">
+            <figure>
+                <img style="padding-right: 35em" src="Images/Electronics/Guff%20SSTC/555Interrupter.JPG" alt="555 Interrupter" width="100%">
+                <figcaption style="width: 100%">
+                    <p>
+                        Here's my DIY layout creator design for this board, it consists of two potentiometers which interface this
+                        dual 555-timer circuit to create an interrupter pulse output for the gate driver board. The two potentiometers
+                        are accessible from the outside of the faraday cage, and allow tuning of both the pulse frequency
+                        of the interrupter and thus electrical arcs, and the pulse width of the arcs, or how long the
+                        coil is running continuously (on the order of 1u to 1m second).
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <video controls="controls" width="500" name="Testing interrupter for first time">
+                    <source src="Images/Electronics/Guff%20SSTC/StaccattoWaveform.mp4">
+                </video>
+                <figcaption style="width: 100%">
+                    <p>
+                        Testing the signal driven by this interrupter shows that it's doing its job, and varying pulse length well, but something is
+                        off in my circuit keeping this "sine" envelope from being a uniform square wave across it.
+                        I remedied this later with a large bus capacitor, shaping this into a pulse rather than a sine.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <figure>
+            <img  src="Images/Electronics/Guff%20SSTC/555InterrupterSchem.JPG" alt="Gate Driver Schematic" width="100%">
+        </figure>
+        <p>
+            The interrupter has two functions, the first is fairly easy, it needs to create a digital pulse of an equal pulse duration
+            but variable frequency, and, for my added "staccatto" functionality, it needs to sync the start of the pulse to
+            the first quarter of the mains AC waveform. <br>
+            <br>
+            <strong>The idea of syncing the pulse</strong> to mains voltage is that when the power through the half bridge is increasing during
+            the first quarter of the mains sine wave, the tesla coil output is enabled. This is as inputting a <em>pseudo-ramp</em>
+            to the power bus of the half bridge, rather than a simple DC or AC voltage. In this mode of operation, the arcs
+            outputted from the tesla coil are much <strong>longer and straighter</strong> in contrast to the <strong>shorter and more branching</strong> arcs
+            of a square output.<br>
+            <br>
+            This board connects to and is powered from the gate drive board. The 12V ac signal from a 12V transformer is
+            inputted into this board and its zero crossing is detected with the first transistor. This pulse from zero crossing
+            the mains AC triggers the first 555 timer, which is set up as a monostable multi-vibrator and times the pulse width.
+            The second 555 timer pulls the first timer's reset pin down during a "cooldown" period set by the second potentiometer.
+            In this way, the effective frequency output of the interrupter can be set.
+        </p>
+    </div>
+
+    <div style="text-align: center; margin-right: auto; margin-left: auto">
+        <figure>
+            <img  src="Images/Electronics/Guff%20SSTC/ArcOverlay.png" alt="impressive arc photo" width="60%">
+        </figure>
+        <p style="font-size: 1.5em">
+            Wow you got to the end! Thanks for reading one of my most technical pages! Learn about interesting other
+            coils <a class="text-link" target="_blank" href="SSTC.html">here</a>!
+        </p>
+    </div>
+
+
+
+</div>
+
+
+
+<p class="footer">
+    Contact me at
+    <a class="flexible-link" href="mailto:NortWareGames@gmail.com">NortWareGames@gmail.com</a>
+</p>
+
+
+</body>
+</html>
